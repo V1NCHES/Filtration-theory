@@ -1,0 +1,26 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath,amssymb,mathrsfs,cancel}
+\usepackage[margin=22mm]{geometry}
+\usepackage{graphicx,float}
+\usepackage[unicode,hidelinks]{hyperref}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\Div}{div}
+\newcommand{\Rey}{\mathrm{Re}}
+\setlength{\emergencystretch}{3em}
+\sloppy
+\interfootnotelinepenalty=10000
+\newcommand{\topic}[1]{\par\medskip\noindent\textbf{#1}\par\nobreak\smallskip}
+\renewcommand{\thefootnote}{\arabic{footnote})}
+\begin{document}
+\section*{Вопрос 10}
+Описание многофазной фильтрации. Обобщенный закон Дарси, относительная фазовая проницаемость. Учет капиллярной разности давлений между фазами, функция Леверетта.
+
+\medskip
+\noindent\textbf{Источник:} К. С. Басниев, А. М. Власов, И. Н. Кочина, В. М. Максимов. \textit{Подземная гидравлика}. Москва: Недра, 1986. Глава 1, § 5, с. 19--22; глава 9, §§ 2--3, с. 199--204.
+\par\bigskip
+\input{chapter}
+\end{document}

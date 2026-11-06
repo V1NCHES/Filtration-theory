@@ -1,0 +1,3104 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{DejaVu Serif}}
+  \IfFontExistsTF{Arial}{\setsansfont{Arial}}{\setsansfont{DejaVu Sans}}
+  \IfFontExistsTF{Courier New}{\setmonofont{Courier New}}{\setmonofont{DejaVu Sans Mono}}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=20mm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{russian}
+\ifPDFTeX
+\else
+\IfFontExistsTF{Times New Roman}{\babelfont{rm}{Times New Roman}}{\babelfont{rm}{DejaVu Serif}}
+\fi
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+% Исходник для редактирования в Codex. Кодировка UTF-8.
+% Сборка: xelatex porous_literature_index.tex (запустить дважды).
+% OCR и исходные номера страниц сохранены; сверять спорные места по сканам.
+\usepackage{microtype}
+\setlength{\emergencystretch}{3em}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Указатель литературы по течениям в пористых средах},
+  pdflang={ru},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Указатель литературы по течениям в пористых средах}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+Дата составления: 6 ноября 2026 года. Всего приложено 14 файлов: 12 книжных файлов, программа и рукописный конспект. Полные тексты книг не изучались; указатель составлен по титульным страницам, оглавлениям и программе.
+
+% ===== Раздел 1 =====
+
+\section{Как использовать}\label{section-01}
+
+По вопросу найти подходящую книгу, главу и параграф; затем проверить нужное место по оригиналу. В ответе давать название книги, главу, параграф, печатную страницу и при необходимости страницу файла. Нумерация переводов и английских изданий различается. Извлеченные ниже оглавления содержат ошибки OCR, особенно в цифрах; спорные номера сверять по скану. Маркер «Страница файла» обозначает страницу PDF/DjVu, остальные номера внутри оглавлений --- печатные страницы.
+
+% ===== Раздел 2 =====
+
+\section{Список файлов}\label{section-02}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+№
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Книга или материал
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Файл
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & И. А. Чарный. Подземная гидрогазодинамика. 1963 & \texttt{Charny.djvu} \\
+2 & А. Г. Куликовский, Е. И. Свешникова. Нелинейные волны в упругих телах. 1998 & \texttt{Kulikovskii-Sveshnikova.djvu} \\
+3 & R. E. Collins. Flow of Fluids Through Porous Materials. Английское издание & \texttt{Collins-eng.pdf} \\
+4 & Г. И. Баренблатт, В. М. Ентов, В. М. Рыжик. Теория нестационарной фильтрации жидкости и газа. 1972 & \texttt{Barenblatt-et-al-1972.djvu} \\
+5 & К. С. Басниев, А. М. Власов, И. Н. Кочина, В. М. Максимов. Подземная гидравлика. 1986 & \texttt{Basniev-et-al.djvu} \\
+6 & Н. Е. Леонтьев. Основы теории фильтрации. 2-е изд., 2017 & \texttt{Leontiev-2017.pdf} \\
+7 & М. Маскет. Течение однородных жидкостей в пористой среде. 2004 & \texttt{Muskat-2004.djvu} \\
+8 & Р. Коллинз. Течения жидкостей через пористые материалы. 1964 & \texttt{Collins.djvu} \\
+9 & Myron B. Allen. The Mathematics of Fluid Flow Through Porous Media. 2021 & \texttt{Allen-The-mathematics-of-fluid-flow-through-porous.pdf} \\
+10 & Jacob Bear. Dynamics of Fluids in Porous Media. 1972 & \texttt{Bear-Dynamics-of-fluids-in-porous-media-1972.djvu} \\
+11 & Г. И. Баренблатт, В. М. Ентов, В. М. Рыжик. Движение жидкостей и газов в природных пластах. 1984 & \texttt{Barenblatt-et-al-1984.pdf} \\
+12 & M. Muskat. The Flow of Homogeneous Fluids Through Porous Media. Английское издание & \texttt{Muskat-eng.djvu} \\
+13 & Течения в пористых средах. Программа курса Н. Е. Леонтьева & \texttt{porous-program.pdf} \\
+14 & Рукописный конспект лекций, 33 страницы PDF (развороты) & \texttt{porous-lecture-notes.pdf} \\
+\end{longtable}
+
+Важные различия: приложенный русский Маскет датирован 2004 годом (628 с.), хотя программа ссылается на издание 2006 года. Книга П. Я. Полубариновой-Кочиной «Теория движения грунтовых вод» (1977) есть в программе, но среди приложений отсутствует.
+
+% ===== Раздел 3 =====
+
+\section{Быстрый тематический поиск}\label{section-03}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Тема
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Где начать поиск
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Пористость, скорость фильтрации, закон Дарси & Леонтьев, гл. I, §§ 1--4; Чарный, гл. I; Басниев, гл. 1; Allen, § 3.1 \\
+Осреднение, балансы массы, импульса, энергии, граничные условия & Леонтьев, гл. I, §§ 3, 5, 6; Чарный, гл. II; Bear, гл. 4, 6, 7 \\
+Анизотропия и нелинейные законы фильтрации & Леонтьев, §§ 3--4; Allen, §§ 3.2, 3.7; Bear, §§ 5.3, 5.6 \\
+Скважины, стационарные течения, комплексный потенциал & Леонтьев, §§ 7--8; Чарный, гл. III--V; Маскет, гл. IV--V, IX; Allen, § 4.1 \\
+Безнапорная фильтрация, Буссинеск, Дюпюи & Леонтьев, § 9; Чарный, гл. VI; Bear, гл. 8; Allen, § 4.3 \\
+Фильтрация газа, уравнение Лейбензона & Леонтьев, § 11; Маскет, гл. XI; Басниев, гл. 5, 7 \\
+Упругий режим, пьезопроводность, пуск скважины & Леонтьев, § 12; Чарный, гл. VIII; Баренблатт и др. (1972), гл. II--V \\
+Неизотермическая фильтрация & Леонтьев, § 13; Баренблатт и др. (1972), гл. IX \\
+Поршневое вытеснение, устойчивость фронта & Басниев, гл. 8, §§ 1, 2, 4; Чарный, гл. VII, §§ 6--7; Allen, § 6.5 \\
+Фазовые проницаемости, капиллярное давление, функция Леверетта & Басниев, гл. 1, § 5 и гл. 9, §§ 2--3; Баренблатт и др. (1972), гл. VI, § 1; Чарный, гл. IX, § 1 \\
+Бакли--Леверетт, скачок насыщенности & Басниев, гл. 9, §§ 4--5; Баренблатт и др. (1972), гл. VI, § 2; Чарный, гл. IX, § 2; Allen, § 6.4 \\
+Эволюционность разрывов & Куликовский--Свешникова, §§ 1.3, 1.6 \\
+Рапопорт--Лис, структура скачка насыщенности & Баренблатт и др. (1972), гл. VI, § 3; Басниев, гл. 9, § 6 \\
+Трещиновато-пористые среды, двойная пористость & Баренблатт и др. (1972), гл. VII; Басниев, гл. 12; Баренблатт и др. (1984), гл. 3, § 4 \\
+Перенос примеси, дисперсия, адсорбция & Allen, гл. 5; Bear, гл. 10; Коллинз, гл. 8; Баренблатт и др. (1984), гл. 5 \\
+Численные методы, вариационная постановка & Allen, § 3.6; Bear, § 7.9; Басниев, гл. 13 \\
+\end{longtable}
+
+Ссылки на параграфы тем 9--12 сверены с программой курса; остальные строки --- навигация по оглавлениям, а не вывод о полноте изложения.
+
+% ===== Раздел 4 =====
+
+\section{Программа курса}\label{section-04}
+
+{[}FILE PAGE 1{]} Течения в пористых средах Леонтьев Н. Е. 1. Основные физические сведения о пористых средах. Описание фильтрации в рамках механики сплошных сред. Пористость. Скорость фильтрации. 2. Закон Дарси и пределы его применимости. Учёт анизотропии пористой среды. Двучленный закон фильтрации Форхгеймера. Фильтрация с предельным градиентом давления. 3. Уравнения баланса массы, импульса и энергии для течений в пористых средах. Соотношения на разрывах. Типич- ные граничные условия. 4. Замкнутая система уравнений для фильтрации несжимаемой жидкости. Стационарные решения для одномерных течений (с плоскими волнами, течений в случае осевой симметрии). Напорный приток к совершенной скважине с постоянным расходом (дебитом). Формула Дюпюи для напорной фильтрации. 5. Плоская установившаяся фильтрация несжимаемой жидкости. Типичные постановки задач. Применение методов ТФКП. Примеры: постановка задачи о водонепроницаемой плотине с плоским основанием; постановка задачи о работе кротового оросителя. 6. Гидравлическая теория безнапорной фильтрации. Уравнение Буссинеска. Формула Дюпюи для безнапорной филь- трации. 7. Изотермическая фильтрация газа в недеформируемой пористой среде. Уравнение для давления (уравнение Лей- бензона). Аналогия с пологими безнапорными движениями несжимаемой жидкости в пористой среде. 8. Упругий режим фильтрации. Уравнение пьезопроводности. Постановка задачи о распространении плоской вол- ны повышения давления в полубесконечном пласте. Оценка характерного времени распространения возмущения давления. 9. Вытеснение несмешивающихся жидкостей. Одномерная задача о поршневом вытеснении несмешивающихся жид- костей (модель Лейбензона --- Маскета). Устойчивость фронта вытеснения (элементарная теория). {[}3, гл. 8, § 1, 2, 4; 8, гл. VII, § 6, 7{]} 10. Описание многофазной фильтрации. Обобщенный закон Дарси, относительная фазовая проницаемость. Учет ка- пиллярной разности давлений между фазами, функция Леверетта. {[}2, гл. VI, § 1; 3, гл. 1, § 5; гл. 9, § 2, 3; 8, гл. IX, § 1{]} 11. Модель двухфазного течения в пренебрежении капиллярной разностью давлений (модель Маскета --- Мереса). Опрокидывание волны повышения насыщенности в задаче об одномерном течении (в задаче Бакли --- Леверетта). Условия на скачках насыщенности. {[}2, гл. VI, § 2; 3, гл. 9, § 4, 5; 8, гл. IX, § 2{]} 12. Понятие об эволюционности разрывов для гиперболических уравнений. Эволюционность скачка насыщенности в задаче Бакли --- Леверетта. Модель двухфазных течений с учетом капиллярной разности давлений. Понятие об уравнении Рапопорта --- Лиса. Представление о задаче о структуре скачка насыщенности. {[}2, гл. VI, § 3; 3, гл. 9, § 6; 10, § 1.3{]} Литература 1. Б а р е н б л а т т Г. И., Е н т о в В. М., Р ы ж и к В. М. Движение жидкостей и газов в природных пластах. М.: Недра, 1984. 208 с. (http://gidropraktikum.narod.ru/Barenblatt-et-al-1984.pdf) 2. Б а р е н б л а т т Г. И., Е н т о в В. М., Р ы ж и к В. М. Теория нестационарной фильтрации жидкости и газа. М.: Недра, 1972. 288 с. (http://gidropraktikum.narod.ru/Barenblatt-et-al-1972.djvu) 3. Б а с н и е в К. С., В л а с о в А. М., К о ч и н а И. Н., М а к с и м о в В. М. Подземная гидравлика. М.: Недра, 1986. 303 с. (http://gidropraktikum.narod.ru/Basniev-et-al.djvu) 4. К о л л и н з Р. Течения жидкостей через пористые материалы. Пер. с англ. под ред. Г. И. Баренблатта. М.: Мир, 1964. 352 с. (http://gidropraktikum.narod.ru/Collins.djvu) 5. Л е о н т ь е в Н. Е. Основы теории фильтрации. М.: МАКС Пресс, 2017. 88 с. (http://gidropraktikum.narod.ru/Leontiev-2017.pdf) 6. М а с к е т М. Течение однородных жидкостей в пористой среде. М.--Ижевск: Институт компьютерных исследова- ний, 2006. 640 с. (http://gidropraktikum.narod.ru/Muskat-2004.pdf) 7. П о л у б а р и н о в а - К о ч и н а П. Я. Теория движения грунтовых вод. М.: Наука, 1977. 664 с. (http://eqworld.ipmnet.ru/ru/library/books/Kochina1977ru.djvu) 8. Ч а р н ы й И. А. Подземная гидрогазодинамика. М.: Гостоптехиздат, 1963. 396 с. (http://gidropraktikum.narod.ru/Charny.djvu) 9. B e a r J. Dynamics of ﬂuids in porous media. N.Y.: Dover Publications, 1972. 764 p. (http://gidropraktikum.narod.ru/Bear-Dynamics-of-fluids-in-porous-media-1972.djvu) 10. К у л и к о в с к и й А. Г., С в е ш н и к о в а Е. И. Нелинейные волны в упругих телах. М.: Московский лицей, 1998. 412 с. (http://gidropraktikum.narod.ru/Kulikovskii-Sveshnikova.djvu)
+
+% ===== Раздел 5 =====
+
+\section{И. А. Чарный. Подземная гидрогазодинамика. 1963}\label{section-05}
+
+Файл: \texttt{Charny.djvu}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 393{]}\par
+ОГЛАВЛЕНИЕ \par
+Стр. \par
+Предисловие 3 \par
+Глава I. Основные понятия теории фильтрации 9 \par
+§ 1. Пористая среда. Связь скорости фильтрации с  \par
+действительной физической скоростью частиц жидкости. Закон Дарси. \par
+Коэффициенты фильтрации и проницаемости 9 \par
+§ 2. Одномерное течение. Приток несжимаемой жидкости к стоку \par
+и источнику на плоскости и в пространстве 17 \par
+§ 3. Одномерное установившееся движение однородной  \par
+сжимаемой жидкости в трубке тока переменного сечения 24 \par
+§ 4. О распределении скоростей в поперечном сечении  \par
+фильтрационного потока 27 \par
+Глава II, Дифференциальные уравнения теории фильтрации однородной \par
+ЖИДКОСТИ 31 \par
+§ 1. Дифференциальные уравнения изотермической фильтрации \par
+без учета массовых сил 31 \par
+\textbar{} 2. Вывод Н. Е. Жуковского дифференциальных уравнений  \par
+изотермического движения жидкости в пористой среде с учетом \par
+массовых сил из дифференциальных уравнений Эйлера для \par
+идеальной жидкости 33 \par
+§ 3. Замечания о системе уравнений для общего случая  \par
+неизотермической фильтрации 40 \par
+§ 4. Закон сохранения массы фильтрационного потока 41 \par
+§ 5. Закон изменения количества движения фильтрационного потока 42 \par
+§ G. Закон сохранения энергии для фильтрационного потока . . 48 \par
+§ 7. Частные случаи 57 \par
+§ 8. Примеры практического использования уравнения энергии \par
+для неизотермической фильтрации 61 \par
+Глава III. Плоские задачи теории фильтрации о притоке к  \par
+совершенным скважинам 66 \par
+§ 1. Связь теории функции комплексного переменного с плоской \par
+задачей теории фильтрации. Функция тока. Комплексный \par
+потенциал 66 \par
+§ 2. Приток к точечным стокам и источникам на плоскости. Случай \par
+равнодебитных стока и источника. Приток к скважине,  \par
+эксцентрично расположенной в круговом пласте 72 \par
+§ 3. Вывод некоторых формул для притока к скважинам при \par
+помощи конформного отображения 78 \par
+§ 4. Течение между конфокальными эллипсами 88 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 394{]}\par
+394 \par
+Оглавление \par
+Стр. \par
+§ 5. Приток к скважинам в пласте овальной формы 89 \par
+§ 6. Приток к скважинам в круговом пласте при переменном  \par
+давлении на контуре питания 92 \par
+Глава IV. Практические методы расчета притока к совершенным  \par
+скважинам 100 \par
+§ 1. Вводные замечания. Потенциал нескольких точечных стоков \par
+в неограниченном пласте 100 \par
+§ 2. Приток к совершенной скважине в пласте с прямолинейным \par
+контуром питания. Метод отражения 103 \par
+§ 3. Приток к группе совершенных скважин в пласте с удаленным \par
+контуром питания. Потенциал и скорость фильтрации  \par
+результирующего течения 106 \par
+§ 4. Приток к бесконечным цепочкам и кольцевым батареям  \par
+скважин 110 \par
+§ 5. Метод эквивалентных фильтрационных сопротивлений . . . 111 \par
+Глава V. Приток к несовершенным скважинам при линейном и нелинейном \par
+законах фильтрации 117 \par
+§ 1. Виды несовершенства скважин. Приток к одной необсаженной \par
+скважине с открытым забоем в центре кругового пласта . . 117 \par
+§ 2. Интерференция несовершенных скважин. Приведенный радиус \par
+несовершенной скважины 124 \par
+§ 3. Расчет фильтрационного сопротивления, обусловленного \par
+несовершенством скважины в однородно-анизотропном пласте 129 \par
+§ 4. Приток к скважинам с двойным видом несовершенства . . . 139 \par
+\textbar{} 5. Случай обсаженной скважины, вскрытой небольшим числом \par
+перфораций 142 \par
+§ 6. Индикаторные кривые дебит --- депрессия для однородной \par
+несжимаемой жидкости и для газа при линейном и  \par
+нелинейном законах фильтрации. Интерференция скважин при  \par
+двучленном законе фильтрации 145 \par
+Глава VI. Безнапорное движение жидкости в пористой среде 157 \par
+§ 1. Особенности безнапорного движения. Предпосылки  \par
+гидравлической теории безнапорного движения 157 \par
+\textbar{} 2. Гидравлическая теория безнапорного движения через  \par
+прямоугольную перемычку на горизонтальном непроницаемом  \par
+основании 161 \par
+§ 3. Гидравлическая теория безнапорного притока к совершенной \par
+скважине 162 \par
+§ 4. Строгое доказательство формул Дюпюи для безнапорного \par
+движения через перемычку и притока к скважине. ..... 163 \par
+§ 5. Сведение безнапорного движения к равнодебитному напорному 168 \par
+§ 6. Интегральные соотношения между фильтрационным расходом \par
+и граничными потенциалами при плоском и осесимметричном \par
+движении в пласте переменной мощности 172 \par
+§ 7. Дифференциальные уравнения гидравлической теории  \par
+нестационарной безнапорной фильтрации. Аналогия с  \par
+неустановившейся фильтрацией идеального газа 174 \par
+Глава VII. Движение и равновесие границы раздел ;■ длух жидкостей \par
+в пористой среде . \textquotesingle. 178 \par
+§ 1. Введение 178 \par
+§ 2. Уравнения движения отмеченных частиц в потоке однородной \par
+жидкости 180 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 395{]}\par
+Оглавление \par
+395 \par
+Стр. \par
+§ 3. Расчет скорости вытеснения одной жидкости другой из трубок \par
+тока, предполагаемых неизменными 181 \par
+§ 4. Замечания о задачах фильтрации с подвижными граничными \par
+условиями. Сведение задачи о движении границы раздела \par
+к решению интегро-дифференциального уравнения  \par
+специального типа 186 \par
+§ 5. Вытеснение нефти водой из трубки тока переменного сечения 193 \par
+§ 6. Прямолинейное и плоско-радиальное движение границы  \par
+раздела в пласте с постоянными мощностью, пористостью и  \par
+проницаемостью 195 \par
+§ 7. Характер движения водо-нефтяного контакта. Схемы предельно \par
+анизотропных пластов. Устойчивость движения границы \par
+раздела 198 \par
+§ 8. Конус подошвенной воды. Условия равновесия и прорыва \par
+подошвенной воды или верхнего газа в скважину 202 \par
+§ 9. Совместный приток нефти и подошвенной воды к  \par
+несовершенной скважине 214 \par
+■§ 10. Выравнивание возмущенной в начале границы раздела двух \par
+жидкостей в пористой среде под действием гравитационных \par
+сил. Расчет предельных схем течения 218 \par
+§ 11. Автомодельные решения задачи о прямолинейном и  \par
+радиальном вытеснении одной жидкости другой в предельно  \par
+анизотропном пласте ку = оо 230 \par
+Глава VIII. Нестационарная фильтрация однородной упругой жидкости \par
+и газа \textquotesingle{} . . . 250 \par
+§ 1. Уравнения движения упругой жидкости в упругой пористой \par
+среде. Влияние неподвижных газовых включений на  \par
+приведенный модуль упругости пластовой системы 250 \par
+§ 2. Вывод формул для притока упругой жидкости к  \par
+прямолинейной галерее и к точечному источнику на плоскости .... 258 \par
+§ 3. Приток к точечному стоку и кольцевой галерее при  \par
+переменном дебите 269 \par
+§ 4. Метод последовательной смены стационарных состояний.  \par
+Приток к прямолинейной галерее 272 \par
+§ 5. Расчет радиального притока упругой жидкости по методу \par
+последовательной смены стационарных состояний 279 \par
+\textbar{} 6. Об одном видоизменении метода интегральных соотношений \par
+для решения задач упругого режима фильтрации с  \par
+неподвижными а подвижными граничными условиями 284 \par
+§ 7. Некоторые методы определения параметров пластов и  \par
+скважин при упругом режиме фильтрации 298 \par
+\textbar{} 8. Краткие сведения о нестационарной фильтрации газов . . . 306 \par
+Глава IX. Фильтрация смесей нескольких жидкостей 313 \par
+§ 1. Вводные замечания. Основные уравнения фильтрации  \par
+двухфазной жидкости 313 \par
+§ 2. Теория Баклея --- Леверетта 321 \par
+§ 3. Общие соображения о движении скачков насыщенности . . 327 \par
+§ 4. Одномерная фильтрация двухфазной жидкости в трубке тока \par
+переменного сечения без учета массовых сил 330 \par
+§ 5. Одномерная фильтрация двухфазной жидкости с  \par
+произвольными массовыми силами 335 \par
+§ 6. Фильтрация двухфазной жидкости с учетом капиллярного \par
+давления \textquotesingle. 345 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 396{]}\par
+396 \par
+Оглавление \par
+Стр. \par
+§ 7. Фильтрация трехфазной смеси 348 \par
+§ 8. Установившееся движение газированной жидкости в пористой \par
+среде. Замечания о практических методах расчета  \par
+неустановившегося движения 355 \par
+§ 9. Уравнения движения многокомпонентных смесей с учетом \par
+фазовых превращений 365 \par
+Глава X. Некоторые специальные задачи вытеснения в пористой среде 371 \par
+§ 1. Влияние фазовых проницаемостей на характер движения при \par
+интенсивном темпе вытеснения одной жидкости другой в  \par
+пористой среде 371 \par
+§ 2. Влияние неоднородности пористой среды вдоль вертикали \par
+на процесс вытеснения 374 \par
+§ 3. Расчет движения газового объема в неограниченном  \par
+водоносном пласте 378 \par
+Л в т о р \par
+Исаак Абрамович Чарный \par
+ПОДЗЕМНАЯ ГИДРОГАЗОДИНАМИКА \par
+Ведущий редактор С. М. каешкова \par
+Технический редактор А. С. Полосина. Корректор Л. В. Сметанина \par
+Подписано к набору 20/VII 1963 г. Подписано к печати 3/Х 1963 г. \par
+Формат бОХЭО\textquotesingle/гв- Печ. л. 24,75- Уч.-изд. л. 26,74. Т-12457. \par
+Тираж 2960 экз. Зак. 805/508. Цена 1 р. 09 к. \par
+Гостоптехиздат. Москва, К-12, Третьяковский проезд, 1/19- \par
+Типография «Красный Печатник». Ленинград, Московский проспект, 91.\par
+\endgroup
+
+% ===== Раздел 6 =====
+
+\section{А. Г. Куликовский, Е. И. Свешникова. Нелинейные волны в упругих телах. 1998}\label{section-06}
+
+Файл: \texttt{Kulikovskii-Sveshnikova.djvu}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 413{]}\par
+Содержание \par
+Предисловие 7 \par
+Математическое введение 13 \par
+1.1. Законы сохранения и соответствующие им \par
+дифференциальные уравнения 13 \par
+1.2. Гиперболические системы. Линейные и \par
+линеаризованные уравнения. Слабые разрывы. \par
+Инварианты Римана 18 \par
+1.3. Граничные условия. Эволюционность 26 \par
+1.4. Волны Римана 31 \par
+1.5. Разрывы и соотношения на них. Ударная адиабата 38 \par
+1.6. Условия эволюционности разрывов 43 \par
+1.7. Разрывы малой интенсивности 50 \par
+1.8. Поведение ударной адиабаты в окрестности точек \par
+Жуге 55 \par
+1.9. Распад произвольного разрыва и другие автомо- \par
+дельные задачи 61 \par
+1.10. Уравнения законов сохранения в форме Годунова. \par
+Энтропия 71 \par
+1.11. Решения с разрывами как предел непрерывных \par
+решений уравнений усложненной модели 77 \par
+1.12. Малые возмущения в среде с диссипацией 81 \par
+1.13. Структура ударных волн 84 \par
+1.14. Дополнительные соотношения на разрыве 88 \par
+1.15. Еще о структуре и о числе дополнительных \par
+соотношений .......\textquotesingle{} 96 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 414{]}\par
+4 СОДЕРЖАНИЕ \par
+2. Постановка задачи о плоских волнах \par
+в упругой среде 117 \par
+2.1. Модель упругой среды. Система уравнений 117 \par
+2.2. Уравнения теории упругости для одномерных \par
+движений в виде плоских волн. \par
+Условия на разрыве 126 \par
+2.3. Волновая изотропия и анизотропия. Внутренняя \par
+энергия среды с малой волновой анизотропией . . .131 \par
+2.4. Задание упругого потенциала для \par
+слабонелинейной среды 134 \par
+2.5. Распространение нелинейных волн в средах, \par
+взаимодействующих с электромагнитным полем . . 142 \par
+3. Волны Римана 153 \par
+3.1. Малые возмущения. Линейные волны 153 \par
+3.2. Уравнения для волн Римана 159 \par
+3.3. Квазипродольные волны Римана 161 \par
+3.4. Квазипоперечные волны Римана 164 \par
+3.5. Изменение величин в квазипоперечных волнах . . . 169 \par
+3.6. Эволюция квазипоперечных волн Римана 171 \par
+3.7. Волны Римана в случае волновой изотропии .... 173 \par
+4. Ударные волны 177 \par
+4.1. Условия на слабых ударных волнах 177 \par
+4.2. Квазипродольные ударные волны 181 \par
+4.3. Квазипоперечные ударные волны. Ударная адиабата183 \par
+4.4. Условие неубывания энтропии 190 \par
+4.5. Условия эволюционности скачка. Точки Жуге . . . 192 \par
+4.6. Скорость квазипоперечных ударных волн 194 \par
+4.7. Типы эволюционных ударных, волн и их количество 199 \par
+4.8. Положение участков эволюционности на ударной \par
+адиабате 204 \par
+4.9. Ударные переходы в заданное состояние 210 \par
+4.10. Частные виды начальной деформации 211 \par
+4.11. Квазипоперечные ударные волны при G/R? \textless С 1 \par
+и G/R2 \textgreater{} 1 223 \par
+4.12. Волны в несжимаемых средах 230 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 415{]}\par
+СОДЕРЖАНИЕ 5 \par
+4.13. Представление неэволюционного разрыва двумя эво- \par
+люционными, идущими с одинаковой скоростью . . 232 \par
+5. Нестационарные автомодельные задачи \par
+для волн малой амплитуды 239 \par
+5.1. Предварительные замечания 239 \par
+5.2. Задача о внезапном изменении нагрузки на \par
+границе полупространства ("задача о поршне") . .241 \par
+5.3. Построение решения в средах сх\textgreater0 245 \par
+5.4. Построение решения в средах сх\textless0 265 \par
+5.5. Распад произвольного начального разрыва. \par
+Соударение ударных волн 273 \par
+6. Двумерные стационарные нелинейные волны \par
+и автомодельные решения 283 \par
+6.1. Простые волны 283 \par
+6.2. Стационарные ударные волны в движущейся среде 290 \par
+6.3. Задача о бегущей нагрузке 294 \par
+7. Упрощенные уравнения теории упругости. \par
+Неавтомодельные задачи 297 \par
+7.1. Эквивалентная несжимаемая среда при описании \par
+квазипоперечных волн 297 \par
+7.2. Упрощенные уравнения для квазипоперечных волн, \par
+распространяющихся в одну сторону 301 \par
+7.3. Описание волн Римана и разрывов с помощью упро- \par
+щенных уравнений теории упругости 304 \par
+7.4. Инварианты Римана. Уравнения в плоскости \par
+годографа. Неавтомодельные задачи 306 \par
+7.5. Эволюция при малой анизотропии волн, близких к \par
+вращательным. Катастрофическая перестройка . . 310 \par
+8. Движения вязкоупругих сред 317 \par
+8.1. Модель Кельвина-Фойхта. Уравнения одномерных \par
+движений 317 \par
+8.2. Задача о структуре квазипоперечных ударных волн 320 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 416{]}\par
+6 СОДЕРЖАНИЕ \par
+8.3. Численные решения задач о вязкоупругих волнах, \par
+имеющие автомодельную асимптотику 333 \par
+9. Волны конечной амплитуды в слабоанизотропных \par
+упругих средах 359 \par
+9.1. Введение. Случай волновой изотропии 359 \par
+9.2. Волны Римана в несжимаемой среде при д \textless С 1 . . . 365 \par
+9.3. Волны Римана в несжимаемой среде при \par
+анизотропии частного вида 374 \par
+9.4. Волны Римана в сжимаемой среде 377 \par
+9.5. Ударные волны в несжимаемой среде 381 \par
+9.6. Ударные волны в сжимаемой среде 392 \par
+Литература 399 \par
+Предметный указатель 407\par
+\endgroup
+
+% ===== Раздел 7 =====
+
+\section{R. E. Collins. Flow of Fluids Through Porous Materials. Английское издание}\label{section-07}
+
+Файл: \texttt{Collins-eng.pdf}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 7{]}\par
+6 PETROMAN\par
+\smallskip
+CONTENTS\par
+\smallskip
+Preface. .\par
+\smallskip
+Chapter 1. Structure and Properties of Porous Materials 1\par
+1.10 Structure and Classification. .......0....6 06sec 1\par
+1.20 Structure and Properties 2\par
+1.30 Porosity coe 3\par
+1,31 Porosity and Structure... 3\par
+1.32 Fffects of Consolidation and Compaction on Porosity. 5\par
+1.33; Measurement of Porosity cece 7\par
+\smallskip
+1.40 Specific Surface\par
+\smallskip
+1.41 Measurement of Specific Surface... =... : 9\par
+1.50 Permeability : see 10\par
+1,51 Structural Interpretation of Permeability. . as .. it\par
+\smallskip
+1.52 Factors Affecting the Permeability of Porous Materials B\par
+1.60 `Typical Values of Porosity, Pormeability and Specific Surfiee. 14\par
+1,70 Porosity and Permeability Distributions in Naturally Porous\par
+\smallskip
+Materiais : . 4\par
+1.80 Mechanical Properties of Porous Materials....00..0..0... 0 19\par
+Exercises... re 20\par
+Referene a\par
+Chapter 2. Statics of Fluids in Porous Media 22\par
+2.10 Fluid Saturations. . . eee cece eee 22\par
+2.11 Measurement of Fluid Saturations.. 0.0000. 0cs.c sees BB\par
+2.20 Capillary Pressure... beens 23\par
+2.21 Capillary Pressure Saturation Relationship... 25\par
+2.22 Measurement of Capillary Pressure........000.00.600000.. 26\par
+2.23 Capillary Hysteresis............. 29\par
+\smallskip
+2.24 Lrreducible Saturation (Connate Water)\par
+2.25 The Leverett j-Function......... .\par
+2.30 Pore-Size Distribution..........2.... .\par
+2.40 Vapor Pressuro of Fluids in Porous Media...\par
+\smallskip
+2.41 Measurement of Vapor Pressure-Saturation Curves......... 35\par
+2.50 Heat of Wetting and Heat of Swelling. .... ve BG\par
+2.60 Electrical Properties of Fluid-filed Porous Materials........ 38\par
+2.70 Osmosis... 0.06.6 ee renee ceeeeeese ees 41\par
+\smallskip
+vii\par
+\smallskip
+www.petroman.ir\par
+\smallskip
+\smallskip
+{[}Страница файла 8{]}\par
+2.80 Electrochemical Potentials. 00.0... AD\par
+\{ 2.0 Static Muid Distributions in Porous Materials, . 4\par
+i Exel 6\par
+i References 46\par
+\textbar{} 3. Physical and Mathematical Theory of Flow 47\par
+\{ Mechanisms and Types of Flow............. 47\par
+j Laminar Viscous Flow through Porous Media.............. 47\par
+1 `Turbulent Plow through Porous Media cette BL\par
+` Simultaneous Laminar Mow of Immiscible Fluids through\par
+j Porous Media. 0.0.0 ecco : fevers BB\par
+Streaming Potential and Electro-Osmosis.....-.- 56\par
+5 Thermo-Osmosis, renner 58\par
+Limitations of Classical Hydrodynamics... 00.58\par
+Differential Form of Darcy\textquotesingle s Law. Leteeeee B\par
+Simultaneous Flow of Immiscible Fluids through Porous\par
+Media; Relative Permeability \_ 60\par
+Darcy\textquotesingle s Law for Anisotropic Porous Media 2\par
+Equations of State for Muids. .. veteeeeeees 65\par
+`The Continuity Equation. . fie eeeee 66\par
+The Differential Equations of Fluid Flow through Porous\par
+Materials. i vines 69\par
+3.70 Boundary Conditions. 74\par
+Referene: feces ces cece 16\par
+Chapter 4. Steady Laminar Flow of Homogeneous Fluids a7\par
+4.10 The Steady-State Regime Li ceeceeeeeeeeeee WT\par
+4.20 Linear Plow and the Measurement of Permeability... 77\par
+4.30 Horizontal Plane Flow in Homogeneous Media; Mathematical\par
+Vormutation........ Le tteeeeeeee. 80\par
+`The Stream Function and Complex Potential ceeeee 82\par
+Radial Flow between Coneentric Circular Cylinders... 86\par
+: Conformal Mapping. fo ieteecteteeseeees) 88\par
+`The Schwarz-Christoffel Transformation; Conformal Mapping\par
+of a Rectangle. . ee ceeceeees 91\par
+440 `Transverse Permeabilities of Cylindrical Cores... ., 93\par
+4.50 Sourees and Sinks een Letcceereeees 98\par
+4.51 System of Wells Near a Plane Discontinuity in Medium; the\par
+Method of Images. .... coves fovveeeeecees 102\par
+4.60 Gravity Drainage: Free Surfaces... 105\par
+\smallskip
+www.petroman.ir\par
+\smallskip
+{[}Страница файла 9{]}\par
+6 PETROMAN conrenrs ix\par
+\smallskip
+Bxereises... 0... ce 106\par
+References. . . . =e ene .. 107\par
+\smallskip
+Chapter 5. Transient Laminar Flow of Homogeneous Fluids\par
+5.10 Transient Flow of Compressible Liquids\par
+5.20 The Laplace Transform and Duhamel's Theorem\par
+5.30 Sources and Sinks; the Method of Images.\par
+5.40 Pressure Build-up Tests in Oil Wells.\par
+5.50 Performance of Water-Drive Reservoirs\par
+51 The Infinite Linear Aquifer.....\par
+52 The Infinte Radial Aquifer\par
+5,53 The Tilted Aquifer. wee\par
+5.60 Flow of an Ideal Gas, Numerical Integration\par
+\smallskip
+Chapter 6, Simultaneous Flow of immiscible Fluids 139\par
+6.10 Steady Linear Flow and the Measurement of Relative Perme-\par
+ability; the Boundary Hilfect\par
+6.20 Immiscible Displacement; The Buckley-Leverett Equation\par
+6.21 The Welge Integration of the Bucktey-Leverett Equation; The\par
+Calculation of Relative Permeabilities from Displacement\par
+\smallskip
+Data...... 149\par
+6.30 Linear Immiscible Displacement Including the Effects of\par
+Capillary Pressure eee bes 182\par
+640 Imbibition Si aesseterenesee . 161\par
+50 Multi-dimensional `Two-phase Flow: Numerical Solutions... 167\par
+6.60 Turbulent Flow of Immiscible Fluids. . . 168\par
+Exercises. . ae \_ eee a 168\par
+References rn eee eee oe ... 169\par
+Chapter 7. Moving Boundary Problems; Displacement; Deposition of\par
+Solids 170\par
+7.10 Displacement of One Fluid by Another 170\par
+7.11 Analytical Solution of the Linear Displacement. Problem 73\par
+\smallskip
+7.20 Two-Dimensional Displacement and Waterflood Sweep Pat\par
+terns for Unit Mobility Ratio 115\par
+7.21 The Effect of Mobility-Ratio on Areal Sweep Efficiency... 187\par
+\smallskip
+7.30 Filtration and the Deposition of Solids........ veces 189\par
+740 Frontal Instability and Viscous Fingering........0........ 196\par
+Exercises. . oe . . 200\par
+References . 200\par
+\smallskip
+www.petroman.ir\par
+\smallskip
+\smallskip
+{[}Страница файла 10{]}\par
+6 PETROMAN\par
+\smallskip
+x CONTENTS\par
+\smallskip
+Chapter 8.\par
+\smallskip
+imultaneous Laminar Flow of Miscible Fluids 201\par
+\smallskip
+8.10 Miscible and Immiscible Fluids, Fick's Law of Diffusion 201\par
+8.20 Miscible Displacement in a Capillary Tube........ ss. 202\par
+8.30 Miscible Displacement in Porous Media........ wee 207\par
+8.31 Theory of Dispersion in Porous Media................. 200\par
+\smallskip
+8.40 Macroscopic Features of Miscible Displacement.\par
+8.50 Turbulent Flow of Miscible Fluids.\par
+\smallskip
+oe. 212\par
+.. 214\par
+. 25\par
+\smallskip
+Exercises... OD e eee cece eee eee ete eee e ees .\par
+References. 0.2.2. e cece eee cece eres QU5\par
+Chapter 9. Theory of Models 217\par
+9.10 The feeb e eee e eee se. 217\par
+9.20 Basic Theory of Models eee vee 218,\par
+9.30 Scaled Models and Scaling Laws. teens » 221\par
+\smallskip
+9.40 Examples of Scaling Analy:\par
+\smallskip
+System are Known. ... wees weeee 222\par
+9.50 Example of Analog Construction... 229\par
+9.60 Example of Scaling When the Bauations for the System are\par
+\smallskip
+not Known... 2.0.2... eeee ee . ve. 282\par
+9.70 Partial Similarity in Sealed Models...... veceeeee BBB\par
+\smallskip
+9.80 Special Aspects of Model Scaling for Porous Media . . 238\par
+9.90 Results of Model Studies of Flow Through Porous Media... 239\par
+\smallskip
+Appendix... . 240\par
+Exercises. ce . . cece 240\par
+References. .......... vevee eee eeeeeees cee SAL\par
+Chapter 10. Flow with Change of Phase 242\par
+10.10 Flow With Change of Phase; Solution-Gas Drive........... 242\par
+10.20 Phase Equilibrium. . bet eecer eee 2. 242\par
+10.30 Supersaturation and Undersaturation........ ss... 50\par
+10.40 Formulation of the Solution-Gas Drive Process...... 253\par
+10.50 Second Formulation of the Solution-Gas Drive Process...... 256\par
+10.60 Third Formulation of the Solution-Gas Drive Process; The\par
+Material Balance Equations. ... + 259\par
+10.70 Flow with Change of Phase; General Procedures. . » 262\par
+Bxxereises..0. eee cee ee + 263\par
+References... + 263\par
+Index....,. » 264\par
+\smallskip
+www.petroman.ir\par
+\endgroup
+
+% ===== Раздел 8 =====
+
+\section{Г. И. Баренблатт, В. М. Ентов, В. М. Рыжик. Теория нестационарной фильтрации жидкости и газа. 1972}\label{section-08}
+
+Файл: \texttt{Barenblatt-et-al-1972.djvu}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 289{]}\par
+ОГЛАВЛЕНИЕ\par
+\smallskip
+Глава Г. Физические основы .... ще" + sae\par
+\$1. Пористая среда и ee свойства зе -24.- К -\par
+\$ 2. Закон фильтрации однородной жидкости \textless{} .\par
+\$ 3. Зависимость параметров жидкости и порвотой среды от\par
+давления еее eee\par
+\smallskip
+Глава И. Осповные задачи нестационарной фильтрации... .....\par
+\smallskip
+\$1. Уравнение неразрывности „........-\par
+\smallskip
+§ 2. Упругий режим фильтрации... еее\par
+\$ 3. Уравнения безпапорно "фильтрации несжимаемой жидкости\par
+\$4. Основные уравнения фильтрации газа... .....\par
+\smallskip
+Глава ИТ. Теория упругого режима фильтрации... ..-\par
+\smallskip
+§ 1. Одномерное прямолипейно-параллельное движение ....\par
+\$2. Осесимметричные задачи и задачи интерференции скважин\par
+при неустановившейся фильтрации . .\par
+\smallskip
+\$ 3. Некоторые специальные задачи упругого режнма ....\par
+\$ 4. Обратные задачи линейной теории нестационарной фильтрации\par
+\smallskip
+Глава ГУ. Нелинейные инвариантные задачи нестационарной фильтрации\par
+жидкостей и газов „еее ..\par
+\smallskip
+\$1. Общая характеристика инвариантных задач теории нестацио-\par
+нарной фильтрации. Автомодельные пологие безнапорные дви-\par
+жения при нулевом начальном уровне жидкости .\par
+\$ 2. Пологие безнапорные движения с нулевым начальным напором:\par
+предельные автомодельные движения, оевсииметрачные авто-\par
+модельные движения 6 6 ee ee ee .\par
+\$3. Артомодельвые движения жидкости H газа плоскими волнами\par
+в полубесконечиом пласте при ненулевом начальном давлении\par
+таза или уровне жидкости... .. иене\par
+\$ 4. Осесимметричные автомодельные движения в бесконечном пласте\par
+при непулевом начальном давлении газа или уровне жидкости\par
+\$ 5. Некоторые специальные автомодельные движения ...\par
+\smallskip
+Глава У. Приближенпыс методы решения задач нестационарной Фильтра-\par
+\smallskip
+\$1. Схема метода интегральных соотношений. Приток к талорее\par
+в бесконечном пласте при упругом режиме. .\par
+\smallskip
+§ 2. Решение задач упругого режима методом `интегральных соотно-\par
+шений .. toe coe tee\par
+\smallskip
+§ 3. Решение задач HecraumonapHoll фильтрации raga...\par
+\smallskip
+23\par
+\smallskip
+26\par
+32\par
+37\par
+47\par
+\smallskip
+116\par
+125\par
+\smallskip
+{[}Страница файла 290{]}\par
+\$ 4. Видоизменоние метода интегральных соотношений для случая\par
+бесконечного пласта еее еее еее 10\par
+\smallskip
+Глава УТ. Фильтрация неоднородных жидкостей... :... 146\par
+\smallskip
+\$1. Фильтрация многофазных жидкостей Чена 146\par
+§ 2. Вытеснение несмешивающихся жидкостей. Задача Баклея ---\par
+\smallskip
+«Леверетта еее еее. 155\par
+\$ 3. Структура скачка насыщенности. Уравнение Рапопорта --- Лиса.\par
+\smallskip
+Стабилизированная зона. еее -е. 464\par
+\$ 4. Капиллярная пропитка и автомодельные задачи вытеснения ве-\par
+\smallskip
+смешивающихся жидкостей „еее неее 112\par
+\smallskip
+Глава УИ. Неуставовившаяся фильтрация в  трощиновато-пористых\par
+средах, средах с двойной пориетостыо и слоистых породах 185\par
+\smallskip
+\$ 1. Фильтрация однородной жидкости в трещиновато-порнстой среде 185\par
+\$ 2. Основные задачи неустановившейся фильтрации однородной\par
+\smallskip
+жидкости в трещиноватых и слоистых пластах... ..... 19\%\par
+\smallskip
+\$3. Двухфазная нестационарная фильтрация и вытеснение не-\par
+смешивающихся жидкостей в средах с двойной пористостью .. 202\par
+Глава УИТ. Нелинейная исстационарная фильтрация... ...... 217\par
+\smallskip
+§ 1. Отклонения ог закона Дарси. Нелинейная фильтрация .... 27\par
+\$2. Автомодельные решения залачи фильтрации жидкости при не-\par
+`линейном законе сопротивления. Фильтрация с предельным гра-\par
+\smallskip
+\$ 3. Приближениое решение задач нестационарной фильтрации при\par
+велинейпом законе сопротивления ен. 28\par
+\smallskip
+Глава IX, Специальные задачи нестационарной фильтрации однородной\par
+\$ 1. Неизотермическое фильтрационное дви ю ee ee BBB\par
+\$2. Упруго-иластический режим нефтяного miacta. . . 0... 25\par
+\smallskip
+Глава Х. Специальные задачи нестационарной фильтрации неоднородной\par
+жидкости. еее иене . 255\par
+§ 1. Вытеснение взаимосмешивающихся жидкостей... .... 255\par
+\smallskip
+\$2. Устойчивость вытеснения несмешивающихся и смешивающихся\par
+жидкостей из пористой среды se ee ee ee 261\par
+Приложение еее еее еее 2\par
+Список литературы еее еее еее еее се 28\par
+\smallskip
+Григорий Исаакович Баренблатт, Владимир Мордутовим Ентов,\par
+Виктор Мизайлович Рыжик\par
+\smallskip
+ТЕОРИЯ НЕСТАЦИОНАРНОЙ ФИЛЬТРАЦИИ ЖИДКОСТИ И ГАЗА.\par
+\smallskip
+Редактор Н. Д. Дубровина Технический редактор В. В. Соколова\par
+рН. д. Huse Корректор М. П. Курыяма\par
+Сдано в набор 13/УИ 1972 г. Подписано в печать 17/Х 1972г. Т-17124.\par
+Формат 60X90 ie. Бумага № 2. Печ. л. 18.0. `Уч.-изд. л. 18,54.\par
+\smallskip
+Тираж 1500 экз. Заказ № 1865/72-6. Цена 2 р. 08 к.\par
+\smallskip
+`Издительство «Недра», 103633, Москва, К-12, Третьяковокий проезд, 1/19.\par
+`Пепингралокая типография NM 6 Главполиграфирома Государственного\par
+Комитета Совета Министров СССР по делам издательств, полиграфии и книжной торговли.\par
+"Московский пр., 94.\par
+\endgroup
+
+% ===== Раздел 9 =====
+
+\section{К. С. Басниев, А. М. Власов, И. Н. Кочина, В. М. Максимов. Подземная гидравлика. 1986}\label{section-09}
+
+Файл: \texttt{Basniev-et-al.djvu}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 302{]}\par
+ОГЛАВЛЕНИЕ \par
+Введение 3 \par
+Глава 1. Основные понятия и законы фильтрации нефти, газа и \par
+воды 6 \par
+§ 1. Особенности движения флюидов в природных пластах 6 \par
+§ 2. Пористая среда и ее фильтрационные характеристики 6 \par
+§ 3. Скорость фильтрации. Закон Дарси --- линейный  \par
+закон фильтрации 9 \par
+§ 4. Границы применимости закона Дарси. Нелинейные \par
+законы фильтрации 13 \par
+§ 5. Обобщенный закон Дарси 19 \par
+§ 6. Понятие о режимах нефтегазоводоносных пластов . 22 \par
+Глава 2. Основы моделирования процессов фильтрации нефти, газа \par
+и воды \textquotesingle. 24 \par
+§ 1. Цели и задачи моделирования фильтрационных  \par
+процессов 24 \par
+§ 2. Физическое моделирование процессов фильтрации  \par
+пластовых флюидов 25 \par
+§ 3. Математическое моделирование процессов фильтрации \par
+пластовых флюидов 26 \par
+§ 4. Численная и машинная модели пластовых систем ... 27 \par
+§ 5. Аналоговое моделирование 27 \par
+§ 6. Основы анализа размерностей и теории подобия ... 28 \par
+§ 7. Применение методов теории размерностей в подземной \par
+гидравлике 36 \par
+Глава 3. Дифференциальные уравнения фильтрации флюидов в  \par
+нефтегазоносных пластах 39 \par
+§ 1. Вводные замечания 39 \par
+§ 2. Вывод уравнения неразрывности 40 \par
+§ 3. Дифференциальные уравнения движения 42 \par
+§ 4. Зависимость параметров флюидов и пористой среды от \par
+давления 45 \par
+§ 5. Начальные и граничные условия 49 \par
+Глава 4. Установившееся движение несжимаемой жидкости в  \par
+пористой среде 51 \par
+§ 1. Вывод дифференциального уравнения установившейся \par
+фильтрации несжимаемой жидкости по закону Дарси .... 51 \par
+§ 2. Одномерные фильтрационные потоки несжимаемой  \par
+жидкости в однородных пластах 53 \par
+§ 3. Исследование фильтрационных течений несжимаемой \par
+жидкости в неоднородных пластах 69 \par
+§ 4. Одномерные фильтрационные потоки несжимаемой  \par
+жидкости при нелинейных законах фильтрации 78 \par
+§ 5. Интерференция скважин . 82 \par
+§ 6. Приток к несовершенным скважинам 96 \par
+§ 7. Установившиеся безнапорные фильтрационные потоки \par
+жидкости 101 \par
+§ 8. Решение плоских задач фильтрации методами теории \par
+функций комплексного переменного . . • 105 \par
+301 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 303{]}\par
+Глава 5. Установившееся движение упругой жидкости и газа в пористой \par
+среде . . . ." 11S \par
+§ 1. Дифференциальные уравнения установившейся  \par
+фильтрации упругой жидкости и газа по закону Дарси ИЗ \par
+§ 2. Аналогия установившейся фильтрации сжимаемого  \par
+флюида с фильтрацией несжимаемой жидкости 115 \par
+§ 3. Установившаяся фильтрация упругой жидкости . . . .116 \par
+§ 4. Прямолинейно-параллельный фильтрационный поток \par
+идеального газа 117" \par
+§ 5. Плоскорадиальный фильтрационный поток идеального \par
+газа по закону Дарси 119 \par
+§ 6. Плоскорадиальный фильтрационный поток идеального \par
+газа по двучленному закону фильтрации 123- \par
+§ 7. Плоскорадиальный фильтрационный поток реального \par
+газа по закону Дарси 125 \par
+§ 8. Фильтрационный поток реального газа по двучленному \par
+закону фильтрации к несовершенной скважине 126 \par
+Глава 6. Неустановившееся движение упругой жидкости в пористой \par
+среде 12S \par
+§ 1. Упругий режим пласта и его характерные особенности . 12\& \par
+§ 2. Подсчет упругого запаса жидкости в пласте 130 \par
+§ 3. Дифференциальное уравнение неустановившейся  \par
+фильтрации упругой жидкости 131 \par
+§ 4. Одномерные фильтрационные потоки упругой жидкости. \par
+Точные решения уравнения пьезопроводности. Основная  \par
+формула теории упругого режима 133- \par
+§ 5. Интерференция скважин в условиях упругого режима . 144 \par
+§ 6. Определение коллекторских свойств пласта по данным \par
+исследования скважин при упругом режиме 148- \par
+§ 7. Приближенные методы решения задач теории упругого \par
+режима 151 \par
+§ 8. Приток упругой жидкости к укрупненной скважине . . 163- \par
+Глава 7. Неустановившееся движение газа в пористой среде . . . .170 \par
+§ 1. Вывод дифференциального уравнения Лейбензона . . . 170 \par
+§ 2. Линеаризация уравнения Лейбензона и основное решение \par
+линеаризованного уравнения 172 \par
+§ 3. Решение автомодельной задачи о притоке газа к скважине \par
+с постоянным дебитом в точной постановке 175 \par
+§ 4. Решение задачи о притоке газа к скважине методом  \par
+последовательной смены стационарных состояний 177 \par
+§ 5. Метод усреднения 180 \par
+§ 6. Применение принципа суперпозиции к задачам  \par
+неустановившейся фильтрации газа 182 \par
+§ 7. Приближенное решение задач об отборе газа из  \par
+замкнутого пласта при помощи уравнения материального баланса . 185 \par
+Глава 8. Взаимное вытеснение жидкостей и газов. Задачи с  \par
+подвижными границами 187 \par
+§ 1. Кинематические условия на подвижной границе раздела \par
+при взаимном вытеснении жидкостей 188 \par
+§ 2. Прямолинейно-параллельное вытеснение нефти водой . . 180 \par
+§ 3. Плоскорадиальное вытеснение нефти водой 193 \par
+§ 4. Устойчивость движения границы раздела жидкостей . . 196- \par
+Глава 9. Основы теории фильтрации многофазных систем 198 \par
+§ 1. Связь с проблемой нефтегазоотдачи пластов 198 \par
+302 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 304{]}\par
+§ 2. Основные характеристики многофазной фильтрации . . 199 \par
+§ 3. Исходные уравнения многофазной фильтрации .... 202 \par
+§ 4. Одномерные модели вытеснения несмешивающихся  \par
+жидкостей 205 \par
+§ 5. Задача Баклея---Леверетта и ее обобщения 210 \par
+§ 6. Двухфазное течение с учетом капиллярного давления . 222 \par
+§ 7. Фильтрация трехфазной смеси 225 \par
+§ 8. Движение газированной жидкости в пористой среде . 228 \par
+Глава 10. Гидродинамические модели методов повышения нефте- и \par
+згазоконденсатоотдачи пластов 232 \par
+§ 1. Физические основы применения химических реагентов \par
+при заводнении нефтяных пластов 232 \par
+§ 2. Вывод системы уравнений двухфазной фильтрации с  \par
+активной примесью 234 \par
+§ 3. Движение скачков насыщенности и концентрации . . . 236 \par
+§ 4. Вытеснение нефти раствором активной примеси .... 238 .. \par
+§ 5. Основы неизотермической фильтрации жидкостей и газов 244 \par
+§ 6. Температурное поле пласта. Определение потерь теплоты \par
+через кровлю и подошву 246 \par
+§ 7. Нагревание призабойной зоны пласта при закачке  \par
+горячей жидкости 249 \par
+Глава 11. Особенности фильтрации неньютоновских жидкостей . . 251 \par
+§ 1. Реологические модели фильтрующихся жидкостей и  \par
+нелинейные законы фильтрации 252 \par
+§ 2. Одномерные задачи фильтрации вязкопластичной  \par
+жидкости 257 \par
+§ 3. Образование застойных зон при вытеснении нефти водой 262 \par
+Глава 12. Движение жидкостей и газов в трещиноватых и трещинс- \par
+вато-пористых средах 263 \par
+§ 1. Особенности фильтрации в трещиноватых и трещиновато- \par
+пористых средах : 263 \par
+§ 2. Вывод дифференциальных уравнений движения жидкости \par
+и газа в трещиноватых и трещиновато-пористых средах . . . 268 \par
+§ 3. Установившаяся одномерная фильтрация жидкости и газа \par
+в трещиноватом и трещиновато-пористом пласте 269 \par
+§ 4. Неустановившееся движение жидкости и газа в  \par
+трещиноватых и трещиновато-пористых средах 274 \par
+§ 5. Вытеснение нефти водой из трещиновато-пористых и  \par
+неоднородных сред 276 \par
+Глава 13. Численное моделирование основных процессов фильтрации \par
+пластовых флюидов 279 \par
+§ 1. Методы решения задач подземной гидравлики 279 \par
+§ 2. Построение дискретного аналога области фильтрации . . 280 \par
+§ 3. Разностные схемы, аппроксимирующие уравнения  \par
+фильтрации упругой жидкости 281 \par
+§ 4. Решение системы конечно-разностных уравнений.  \par
+Сходимость метода 285 \par
+§ 5. Численное решение двумерной задачи нестационарной \par
+фильтрации упругой жидкости в неоднородном пласте .... 288 \par
+§ 6. Построение разностных схем для уравнений двухфазной \par
+фильтрации несжимаемых жидкостей 292 \par
+Список литературы 295 \par
+Приложения 296 \par
+303 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 305{]}\par
+УЧЕБНИК \par
+Каплан Сафербиевич Басниев \par
+Анатолий Михайлович Власов \par
+Ираида Николаевна Кочина \par
+Вячеслав Михайлович Максимов \par
+ПОДЗЕМНАЯ ГИДРАВЛИКА \par
+Редактор издательства Т. К. Лазарева \par
+Технические редакторы О. А. Колотвина, В. Ю. Любимова \par
+Корректор К. С. Торопцева \par
+ИБ № 5801 \par
+Сдано в набор 08.01.86 г. Подписано в печать 29.05.86. Т-07997. Формат \par
+60Х90\textquotesingle Дб. Бумага кн.-журн. имп. Гарнитура Литературная. Печать  \par
+высокая. Усл. печ. л .19,0. Усл. кр.-отт. 19,0. Уч.-изд. л. 19,0. Тираж \par
+4600 экз. Заказ 218/439---6. Цена 95 коп. \par
+Ордена «Знак Почета» издательство «Недра», 103633, Москва, \par
+Третьяковский проезд, 1/19 \par
+Ленинградская типография № 4 ордена Трудового Красного Знамени  \par
+Ленинградского объединения «Техническая книга» им. Евгении Соколовой \par
+Союзполиграфпрома при Государственном комитете СССР по делам  \par
+издательств, полиграфии и книжной торговли. 191126, Ленинград,  \par
+Социалистическая, 14\par
+\endgroup
+
+% ===== Раздел 10 =====
+
+\section{Н. Е. Леонтьев. Основы теории фильтрации. 2-е изд., 2017}\label{section-10}
+
+Файл: \texttt{Leontiev-2017.pdf}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 3{]}\par
+Оглавление\par
+Предисловие . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\par
+6\par
+Глава I.\par
+Основные понятия и уравнения теории\par
+фильтрации . . . . . . . . . . . . . . . . . . . . . . . . .\par
+7\par
+§ 1. Описание фильтрации в рамках механики сплош-\par
+ных сред . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\par
+7\par
+Фильтрация (7).\par
+Описание фильтрации в рамках\par
+МСС (7).\par
+§ 2. Параметры, описывающие накопление и перенос\par
+жидкости в пористой среде . . . . . . . . . . . . . . . . .\par
+9\par
+Пористость (9).\par
+О введении характерного размера\par
+пор (10). Просветность (10). Об осредненных геомет-\par
+рических параметрах (11). Скорость фильтрации (11).\par
+О моделировании структуры пористой среды (13).\par
+§ 3. Законы сохранения массы и импульса при филь-\par
+трации в пористой среде . . . . . . . . . . . . . . . . . . .\par
+13\par
+Закон сохранения массы (14).\par
+Уравнение баланса им-\par
+пульса --- закон Дарси (14). Коэффициент проницаемо-\par
+сти (16). Коэффициент фильтрации (16). Закон Дарси\par
+для анизотропных сред (17).\par
+§ 4. Законы фильтрации, отличные от закона Дарси .\par
+18\par
+Пределы применимости закона Дарси (18). Вид закона\par
+фильтрации при немалых скоростях фильтрации (18).\par
+Двучленный закон фильтрации (21). О «турбулентном»\par
+режиме фильтрации (21). Фильтрация неньютоновских\par
+жидкостей (21).\par
+§ 5. Вывод дифференциальных уравнений фильтрации\par
+с помощью осреднения микроскопических уравне-\par
+ний . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\par
+24\par
+Осреднение параметров жидкости в пористой среде (24).\par
+Свойства операции осреднения (25).\par
+Осреднение мик-\par
+роскопического уравнения неразрывности (26). Осред-\par
+нение микроскопического уравнения движения (26).\par
+Упрощение уравнения движения при малых скоро-\par
+стях (27).\par
+Осреднение микроскопического уравнения\par
+энергии (29). Упрощение уравнения энергии (30).\par
+§ 6. Соотношения на разрывах и типичные граничные\par
+условия . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\par
+32\par
+Условия на разрывах (32). Непроницаемая граница (33).\par
+Граница пористой среды с чистым флюидом (34). Гра-\par
+ница раздела фаз внутри пористой среды (34).\par
+Про-\par
+\smallskip
+{[}Страница файла 4{]}\par
+Оглавление\par
+межуток высачивания (35).\par
+Граница двух пористых\par
+сред (36).\par
+Глава II. Фильтрация несжимаемой жидкости в неде-\par
+формируемой пористой среде . . . . . . . . . .\par
+38\par
+§ 7. Замкнутая система уравнений и простейшие задачи\par
+38\par
+Замкнутая система уравнений (38).\par
+Опыт Дарси (39).\par
+Точечный источник в пористой среде (40).\par
+Скважина,\par
+вскрывающая тонкий пласт (42).\par
+§ 8. Применение методов теории функций комплексно-\par
+го переменного для решения плоских фильтраци-\par
+онных задач . . . . . . . . . . . . . . . . . . . . . . . . . . . .\par
+43\par
+Плоскопараллельная фильтрация в вертикальной плос-\par
+кости (43). Непроницаемая граница (45). Граница с во-\par
+доемом (45). Поверхность депрессии (46). Поверхность\par
+высачивания (47).\par
+Непроницаемая плотина с плоским\par
+основанием на пористом слое бесконечной глубины (47).\par
+Приток к дренажной щели (50).\par
+Течения в плоскости\par
+пласта (51).\par
+Скважина в поступательном потоке (52).\par
+О сходстве и различии фильтрационных течений и по-\par
+тенциальных течений идеальной жидкости (53).\par
+§ 9. Гидравлическая теория безнапорной фильтрации\par
+54\par
+Предположения гидравлической теории (54). Уравнение\par
+Буссинеска (55). Формулы Дюпюи для безнапорных те-\par
+чений (56).\par
+Строгое доказательство формулы Дюпюи\par
+для фильтрации через прямоугольную плотину (57).\par
+§ 10. Аналоговое моделирование фильтрации несжима-\par
+емой жидкости . . . . . . . . . . . . . . . . . . . . . . . . . .\par
+58\par
+Течение в лотке Хеле-Шоу (59).\par
+Метод электрогидро-\par
+динамической аналогии (62).\par
+Глава III. Фильтрационные течения с учетом сжи-\par
+маемости флюида и пористой среды . . . .\par
+66\par
+§ 11. Изотермическая фильтрация газа в недеформиру-\par
+емой пористой среде . . . . . . . . . . . . . . . . . . . . . .\par
+66\par
+Уравнение Лейбензона (66).\par
+Граничные условия (67).\par
+Автомодельная задача о закачке газа в пласт (68).\par
+§ 12. Фильтрация с учетом слабой сжимаемости жидко-\par
+сти и пористого скелета . . . . . . . . . . . . . . . . . . . .\par
+70\par
+Упругий режим фильтрации (70). Распространение вол-\par
+ны давления в пласте (72). Пуск скважины с постоян-\par
+ным дебитом (73). Об экспериментальном определении\par
+4\par
+\smallskip
+{[}Страница файла 5{]}\par
+Оглавление\par
+параметров пласта (75). О связи уравнений Лейбензона,\par
+пьезопроводности и Лапласа (76).\par
+§ 13. Неизотермическая фильтрация газа в недеформи-\par
+руемой пористой среде . . . . . . . . . . . . . . . . . . . .\par
+77\par
+Термодинамика двухпараметрических сред (77).\par
+Ана-\par
+лиз уравнения баланса энергии (81). Процесс Джоуля ---\par
+Томсона (83).\par
+Литература . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\par
+85\par
+5\par
+\endgroup
+
+% ===== Раздел 11 =====
+
+\section{М. Маскет. Течение однородных жидкостей в пористой среде. 2004}\label{section-11}
+
+Файл: \texttt{Muskat-2004.djvu}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 624{]}\par
+ОГЛАВЛЕНИЕ \par
+Стр, \par
+Предисловие 3 \par
+Краткая история развития подземной гидравлики в СССР 6 \par
+часть первая \par
+ОСНОВЫ \par
+Глава I. Введение \par
+1. Предмет изучения 15 \par
+2. Однородные жидкости 16 \par
+3. Пористая среда 18 \par
+4. Общие положения аналитической теории 19 \par
+5. Природа пористой среды . „ 21 \par
+6. Систематическая укладка шаров 21 \par
+7. Укладка естественных материалов 24 \par
+8. Сжимаемость песка и гравия 24 \par
+9. Сжимаемость глин 25 \par
+10. Влияние уплотнения и деформации отложений на проницаемость . . 26 \par
+11. Классификация пород и их свойства по накоплению жидкостей ... 26 \par
+12. Связь структуры горных пород и подземных жидкостей . 31 \par
+13. Подземные жидкости, их залегание и миграция 34 \par
+14. Залегание грунтовых вод 36 \par
+15. Содержание воды в несцементированных поверхностных отложениях 37 \par
+16. Движение жидкости в капиллярной зоне 37 \par
+17. Движение жидкости ниже водного зеркала. Поверхностная зона ... 40 \par
+18. Движение жидкости под уровнем грунтовых вод. Глубокие зоны ... 44 \par
+19. Залегание погребенных вод 46 \par
+20. Миграция погребенных вод 48 \par
+21. Влияние уплотнения осадков на миграцию жидкостей 49 \par
+22. Залегание газа и нефти 52 \par
+23. Происхождение газа и нефти 52 \par
+24. Миграция и скопление газа и нефти 54 \par
+Глава П. Закон Дарси и измерение проницаемости пористой среды \par
+1. Закон Дарси 58 \par
+2. Степень обоснованности закона Дарси 59 \par
+3. Постоянная в законе Дарси. Проницаемость пористой среды 70 \par
+4. Единицы проницаемости и номенклатура 74 \par
+5. Основы методики измерения и вычисления проницаемости пористой \par
+среды 76 \par
+6. Измерение проницаемости несцементированных песков 79 \par
+7. Общая техника определений проницаемости сцементированной пористой \par
+среды 83 \par
+S. Дальнейшие подробности измерений проницаемости с помощью  \par
+жидкостей 86 \par
+9. Дальнейшие подробности измерений проницаемости с помощью газов 87 \par
+10. Сравнение газа и жидкостей при измерениях проницаемости .... 88 \par
+11. Измерения проницаемости в полевых условиях . 90 \par
+12. Типовые значения проницаемости * 96 \par
+13. Измерения пористости 100 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 625{]}\par
+Оглавление \par
+625 \par
+Глава 111. Общие гидродинамические уравнения для течения \par
+жидкостей в пористой среде \par
+Стр. \par
+1. Основные гидродинамические соотношения 107 \par
+2. Классическая гидродинамика 110 \par
+3. Обобщенная форма закона Дарси 112 \par
+4. Уравнения движения 115 \par
+5. Граничные и начальные условия 119 \par
+6. Аналогия с остальными физическими проблемами 122 \par
+7. Недекартовы системы координат 123 \par
+8. Заключение 125 \par
+часть вторая \par
+УСТАНОВИВШЕЕСЯ ТЕЧЕНИЕ ЖИДКОСТЕЙ \par
+Глава IV. Проблемы плоского течения и методы теории потенциала \par
+1. Введение 128 \par
+2. Радиальное течение в скважину 129 \par
+3. Ряд Фурье 134 \par
+4. Несимметричное течение в скважину 139 \par
+5. Произвольное распределение давления на контуре 139 \par
+6. Течение между неконцентричными круговыми границами. Функция \par
+Грина 144 \par
+7. Течение из бесконечного линейного источника питания в скважину. \par
+Фронтальное продвижение. Метод отражений 149 \par
+8. Течение из конечного линейного источника питания в песчаник  \par
+бесконечной величины. Метод сопряженных функций 154 \par
+9. Течение из конечного линейного источника питания в скважину.  \par
+Преобразования сопряженной функции. Бесконечный ряд отображений . . 158 \par
+10. Противодавление на плотину с расширенным основанием. Забивная \par
+крепь отсутствует 163 \par
+П. Противодавление на плотину с забивной крепью. Теорема Шварца-Кри- \par
+стоффеля 165 \par
+12. Фильтрационный расход под плотинами с удлиненной шириной  \par
+основания. Отсутствие забивной крепи. Преобразование эллиптической  \par
+функции , 175 \par
+13. Фильтрационный расход под плотинами с удлиненной шириной  \par
+основания при наличии забивной крепи 181 \par
+14. Фильтрационный расход под коффердамом 185 \par
+15. Анизотропная среда 189 \par
+16. Выводы из общей теории потенциала. Теорема Грина 190 \par
+17. Приближенные и неаналитические методы решения задач плоского  \par
+течения 195 \par
+18. Заключение 204 \par
+Глава V. Пространственные (трехразмерные) задачи \par
+1. Введение 216 \par
+2. Сферическое течение 217 \par
+3. Несовершенные скважины. Распределение потенциала 220 \par
+4. Текущие дебиты несовершенных скважин 227 \par
+5- Несовершенные скважины в анизотропных песчаниках 231 \par
+6. Заключение 234 \par
+Глава VI. Гравитационное течение \par
+1. Введение 240 \par
+2. Дренирование наклонного пласта песчаника. Задача Гопфа и Трефтца 244 \par
+3. Решение задачи двухразмерного гравитационного течения методом  \par
+годографа. Отображение границ 251 \par
+4. Фильтрация черзз плотину с вертикальными фасами. Аналитическая \par
+теория . . 2 53 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 626{]}\par
+626 \par
+Оглавление \par
+Стр. \par
+5. Численные приложения 258 \par
+6. Изучение гравитационного течения с помощью электрических моделей 266 \par
+7. Соответствие некоторых точных решений уравнения Лапласа для  \par
+гравитационного течения 269 \par
+8. Фильтрация воды из каналов и канав в песчаники с глубоко  \par
+залегающим водяным зеркалом 276 \par
+9. Фильтрация воды из каналов или канав в песчаники, которые  \par
+подстилаются высокопроницаемыми гравийными ложами на малых глубинах 270 \par
+10. Приближенная теория фильтрации воды через плотины с наклонными \par
+фасами 281 \par
+11. Фильтрационные струи из каналов и канав, поглощаемые неглубоко  \par
+залегающим зеркалом воды 286 \par
+12. Приближенное решение некоторых проблем ирригации и дренирования 292 \par
+13. Субирригация 293 \par
+14. Проблема водонасыщения 294 \par
+15. Проблема эрозии 294 \par
+16. Дренирование гончарными трубами 295 \par
+17. Теория гравитационного течения Дюпюи-Форхгеймера 297 \par
+18. Эксперименты на песчаных моделях с трехразмерными  \par
+гравитационными течениями 302 \par
+19. Составной напор при гравитационном течении 310 \par
+20. Приближенная потенциальная теория расхода при гравитационном  \par
+течении 312 \par
+21. Заключение 318 \par
+Глава VII. Системы с непостоянной проницаемостью \par
+1. Введение. Поверхности разрыва непрерывности 331 \par
+2. Непрерывное изменение величины проницаемости 332 \par
+3. Прерывное радиальное изменение проницаемости 333 \par
+4. Прилегающие слои с различной проницаемостью. Течение жидкости в \par
+трещиноватых известняках 338 \par
+5. Системы с ограниченными трещинами в известняках 345 \par
+6. Теория солянокислотной обработки скважин из карбонатных  \par
+коллекторов 347 \par
+7. Эффект от солянокислотной обработки в радиальной системе 349 \par
+8. Эффект от солянокислотной обработки высокотрещиноватых  \par
+известняков 351 \par
+9. Несовершенные скважины в переслаивающихся горизонтах .... 354 \par
+10. Эффективность заиленного лайнера на эксплоатационную  \par
+производительность скважины 362 \par
+11. Заключение 369 \par
+Глава VIII. Системы двух жидкостей \par
+1. Введение 374 \par
+2. Продвижение краевой воды. Общая природа и формулировка проблемы 374 \par
+3. Линейное продвижение 380 \par
+4. Двухразмерное радиальное продвижение 382 \par
+5. Линия частиц жидкости в однородной системе 385 \par
+6. Движение линейного контура в единичную скважину 387 \par
+7. Прямое перемещение воды между двумя скважинами 390 \par
+8. Влияние силы тяжести на геометрическую форму продвигающейся  \par
+поверхности раздела 393 \par
+9. Влияние разницы в величине вязкости между жидкостями с обеих  \par
+сторон поверхности раздела 395 \par
+10. Образование водяных конусов. Физические основы теории 397 \par
+11. Аналитические выводы 402 \par
+12. Подавление водяного конусообразования прослоями глин .... 409 \par
+13. Заключение 411 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 627{]}\par
+Оглавление \par
+Глава IX. Многоскважинные системы \par
+Стр. \par
+1. Введение 418 \par
+2. Малые группы скважин. Общая теория 420 \par
+3. Примеры 421 \par
+4. Зависимость эксплоатационной производительности от числа скважин \par
+в группе 428 \par
+5. Распределение давления на внешнем контуре 429 \par
+6. Небольшие группы скважин, питающиеся бесконечным линейным  \par
+контуром 431 \par
+7. Бесконечные линейные ряды скважин 432 \par
+8. Распределение давления у бесконечного ряда скважин. Напорная линия 433 \par
+0. Двухлинейное расположение скважин. Эффект заслона 439 \par
+10. Размещение скважин тремя рядами 446 \par
+П. Размещение скважин в шахматном порядке 450 \par
+12. Теория размещения отстоящих (внешних) скважин. Формулировка  \par
+проблемы 451 \par
+13. Однорядное размещение внешних скважин 452 \par
+14. Многорядное размещение внешних скважин 456 \par
+15. Числовой пример 460 \par
+16. Проблема водной репрессии (флюдинг) 463 \par
+17. Процесс образования поверхности раздела вода---нефть. Эксперименты \par
+на электролитических моделях . . 464 \par
+18. Эксперименты на модели с линейным контуром заводнения . . . 466 \par
+19. Эксперименты, соответствующие искусственному методу водной  \par
+репрессии 469 \par
+20. Эффект барьеров в системе водной репрессии 473 \par
+21. Модели с листовыми проводниками и распределение потенциала . . . 475 \par
+22. Аналитические расчеты проводимости сеток скважин при водной  \par
+репрессии. Общий метод 480 \par
+23. Проводимость при прямолинейном заводнении 481 \par
+24. Проводимость среды с пятью скважинами при водной репрессии 483 \par
+25. Проводимость среды с семью скважинами при водной репрессии . . . 485 \par
+26. Проводимость при шахматном размещении скважин 488 \par
+27. Расчет коэфициента полезного действия водной репрессии 490 \par
+28. Коэфициент полезного действия при водной репрессии с  \par
+последовательным питанием от линейного контура 491 \par
+29. Коэфициент полезного действия пятискважинного размещения . . 492 \par
+30. Коэфициент полезного действия семискважинного размещения при  \par
+водной репрессии : 493 \par
+31. Коэфициент полезного действия шахматной расстановки при водной  \par
+репрессии с питанием от линейного контура 494 \par
+32. Общие наблюдения над сетками размещения при водной репрессии . . 495 \par
+33. Сравнение сеток размещения при водной репрессии 496 \par
+34. Заключение 502 \par
+часть третья \par
+НЕУСТАНОВИВШЕЕСЯ ТЕЧЕНИЕ ЖИДКОСТЕЙ \par
+Глава X. Течение сжимаемых жидкостей в пористой среде \par
+1. Введение 513 \par
+2. Радиальное течение. Некоторые предварительные аналитические  \par
+формулировки 520 \par
+3. Радиальные системы, в которых плотности заданы на обоих границах 522 \par
+4. Падение добычи в месторождении, которое эксплоатируется при  \par
+гидравлическом режиме с переменным давлением 525 \par
+5. Предельный случай нулевого внутреннего радиуса 529 \par
+6. Рост забойных давлений в закрытых скважинах 529 \par
+7. Радиальные системы с плотностью, заданной на одной границе и  \par
+расходом на другой 531 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 628{]}\par
+628 \par
+Оглавление \par
+Сет. \par
+8. Падение давления в нефтяном месторожхеняи Ист-Тексас 532 \par
+9. Единичная скважина в замкнутом резервуаре 54!» \par
+10. Скважина с бесконечно малым радиусом ... 541 \par
+11. Радиальные системы с заданными расходами на обоих границах . . . 541 \par
+12. Предельный случай исчезающе малого внутреннего радиуса 54\textquotesingle Л \par
+13. Скважина в замкнутом песчанике 544 \par
+14. Нерадиал :Ное течение. Интерференция скважин. Функция Грина. . . 547 \par
+15. Применение источников и стоков к решению проблем нестационарного \par
+течения сжимаемых жидкостей в пористой среде 553 \par
+16. Заключение 555 \par
+ЧАСТЬ ЧЕТВЕРТАЯ \par
+ДВИЖЕНИЕ ГАЗОВ В ПОРИСТОЙ СРЕДЕ \par
+Глава XI. Движение газов в пористой среде \par
+1. Введение 563 \par
+2. Установившееся течение газов. Линейные системы 564 \par
+3. Установившееся состояние двухразмерных (плоских) систем ... 565 \par
+4. Трехразмерные (пространственные) системы в установившемся  \par
+состоянии 566 \par
+5. Влияние силы тяжести на течение газов в пористой среде 567 \par
+6. Установившееся течение газов в системах с непостоянной  \par
+проницаемостью 568 \par
+7. Двухжидкостные системы. Водное конусообразование 569 \par
+8. Газовые факторы в пористой среде, где газ и нефть движутся как  \par
+однородные жидкости 570 \par
+9. Газовые факторы для сообщающихся газовых и нефтяных зон . . 571 \par
+10. Газовые факторы несообщающихся между собой газовых и нефтяных \par
+песчаников 574 \par
+11. Влияние спуска в скважину фонтанных трубок на величину газового \par
+фактора 577 \par
+12. Образование газовых конусов в скважинах с фонтанными трубками . . 581 \par
+13. Многоскважинные системы 583 \par
+14. Неустановившееся течение газов в пористой среде 584 \par
+15. Замкнутый газоносный резервуар, дренируемый скважиной, которая \par
+работает при постоянном давлении 587 \par
+16. Замкнутый газоносный резервуар, дренируемый скважиной,  \par
+работающей с постоянным отбором 591 \par
+17. Заключение 592 \par
+Приложение I. Уравнение Лапласа в криволинейных координатах . . . 599 \par
+Приложение II. Некоторые двухразмерные функции Грина 600 \par
+Приложение III. Преобразования с помощью модулярной эллиптической \par
+функции 6(q) --- k*2 601 \par
+Приложение IV. Доказательство обобщенной формулы Пуассона ... 602 \par
+Приложение V. Сводка особых количественных выводов, развитых в  \par
+настоящей работе в виде формул или графических построений ...... 603 \par
+Список литературы русских исследователей по вопросу движения  \par
+жидкости через пористую среду 616 \par
+Основные пособия по математическому анализу (на русском языке). . . 623 \par
+Редактор И. И. Гольберг Технический редактор А. С. Полосина \par
+Подписано в печать 20.02.04. Формат 60 х 841/32- \par
+Печать офсетная. Бумага офсетная № 1. \par
+Усл. печ. л. 50,12. Уч. изд. л. 50,86. Гарнитура Тайме. \par
+Научноиздательский центр «Регулярная и хаотическая динамика» \par
+Отпечатано в полном соответствии с качеством \par
+предоставленных диапозитивов в ГИПП «Вятка». \par
+610033, г. Киров, ул. Московская, 122.\par
+\endgroup
+
+% ===== Раздел 12 =====
+
+\section{Р. Коллинз. Течения жидкостей через пористые материалы. 1964}\label{section-12}
+
+Файл: \texttt{Collins.djvu}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 348{]}\par
+ОГЛАВЛЕНИЕ \par
+Глава 1 Структура и свойства пористых материалов 9 \par
+1 10 Структура и классификация 9 \par
+1 20 Структура и характеристики 11 \par
+1 30 Пористость . 12 \par
+1 31 Пористость и структура 12 \par
+1 32 Влияние на пористость консолидации и уплотнения 15 \par
+1 33 Измерение пористости . 16 \par
+1 40 Удельная поверхность . 19 \par
+1 41 Измерение удельной поверхности 20 \par
+1 50 Проницаемость . 21 \par
+1 51 Структурная интерпретация проницаемости 22 \par
+1 52 Факторы, влияющие на проницаемость пористых \par
+материалов 24 \par
+1 60 Типичные значения пористости, проницаемости и удель \par
+ной поверхности 25 \par
+1 70 Распределение пористости и проницаемости в природных \par
+пористых материалах 27 \par
+1 80 Механические свойства пористых материалов 32 \par
+Задачи 34 \par
+Литература 35 \par
+Глава 2 Статика жидкости в пористых средах . 36 \par
+2 10 Насыщенность Жидкостью 36 \par
+2 11 Измерение насыщенности 37 \par
+2 20 Капиллярное давление . . 38 \par
+2 21 Зависимость капиллярного давления от нчсыщенности 41 \par
+2 22 Измерение капиллярного давления 42 \par
+2 23 Капиллярный гистерезис 45 \par
+2 24 Остаточная насыщенность (связанная вода) 47 \par
+2 25 / функция Леверетта 48 \par
+3 30 Распределение пор по размерам 49 \par
+2 40 Давление паров жидкостей в пористых средах 50 \par
+2 41 Определение зависимости давления пара от насыщен \par
+ноети 54 \par
+2 50 Теплота смачивания и теплота набухания 54 \par
+2 60 Электрические характеристики насыщенных жидкостью \par
+пористых сред 56 \par
+347 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 349{]}\par
+3 10 \par
+3 11 \par
+3 12 \par
+3 13 \par
+3 14 \par
+3 15 \par
+3 20 \par
+3 30 \par
+3 31 \par
+3 32 \par
+3 40 \par
+3 50 \par
+3 60 \par
+2 70 Осмос . 60 \par
+2 80 Электрохимические потенциалы 61 \par
+2 90 Статическое распределение насыщенности в пористых \par
+средах 62 \par
+Задачи 63 \par
+Литература 63 \par
+Глава 3 Физическая и математическая теория течения \par
+жидкостей в пористых средах 68 \par
+Типы и механизмы течения жидкостей 68 \par
+Ламинарное течение вязкой жидкости в пористой среде 68 \par
+Турбулентное течение в пористых средах . 74 \par
+Совместное ламинарное течение несмешивающихся жид \par
+костей в пористой среде 76 \par
+Фильтрационный потенциал и электроосмос 79 \par
+Терчоосмос 82 \par
+Ограничения классической гидродинамики 83 \par
+Дифференциальная форма закона Дарси 83 \par
+Совместное течение несмешивающихся жидкостей в по \par
+ристой среде Относительные проницаемости 85 \par
+Закон Дарси для анизотропных пористых сред 87 \par
+Уравнения состояния жидкостей 91 \par
+Уравнение неразрывности 92 \par
+Дифференциальные уравнения течения жидкостей в по \par
+ристых средах . 95 \par
+3 70 Граничные условия 101 \par
+Задачи 104 \par
+Литература 104 \par
+Глава 4 Стационарное ламинарное течение однородной \par
+жидкости 105 \par
+4 10 Установившийся режим 105 \par
+4 20 Прямолинейный поток и измерение проницаемости 105 \par
+4 30 Плоское горизонтальное течение в однородных средах \par
+Математическая формулировка задачи 109 \par
+4 31 Функция тока и компчексныи потенциал 113 \par
+4 32 Радиальный поток между соосными круговыми цилинд \par
+рами . . 117 \par
+4 33 Конформное отображение 119 \par
+4 34 Преобразование Кристоффеля --- Шварца Конформное \par
+отображение прямоугольника 123 \par
+4 40 Поперечная проницаемость цилиндрического керна 126 \par
+4 50 Источники и стоки 131 \par
+4 51 Система скважин вблизи места скачкообразного изме \par
+нения характеристик пористой среды, метод изображе \par
+ний 136 \par
+4 60 Гравитационный дренаж свободные поверхности 140 \par
+Задачи 142 \par
+Литература . 143 \par
+348 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 350{]}\par
+Глава 5. Неустановившееся ламинарное течение  \par
+однородной жидкости 144 \par
+5.10. Неустановившееся течение сжимаемой жидкости . . 144 \par
+5.20. Преобразование Лапласа и теорема Дюамеля 145 \par
+5.30. Источники и стоки. Метод изображений 150 \par
+5.40. Испытания по восстановлению давления в нефтяных \par
+скважинах 155 \par
+5.50. Поведение пластов при водонапорном режиме . . . , 164 \par
+5.51. Бесконечный прямолинейный водоносный горизонт . . 167 \par
+5.52. Бесконечный водоносный горизонт; радиальное течение 171 \par
+5.53. Наклонный водоносный пласт 172 \par
+5.60. Течени есовершенного газа. Численное интегрирование 176 \par
+Задачи 182 \par
+Литература 183 \par
+Глава 6. Совместное течение несмешивающихся  \par
+жидкостей 184 \par
+6.10. Установившееся прямолинейное течение и измерение \par
+относительных проницаемостей. Концевой эффект 184 \par
+6.20. Вытеснение одной жидкости другой. Уравнение Бак- \par
+ли --- Леверетта 189 \par
+6.21. Интегрирование уравнений Бакли ---Леверетта  \par
+методом Велджа. Вычисление относительных  \par
+проницаемостей по данным о вытеснении 197 \par
+6.30. Прямолинейное вытеснение с учетом влияния  \par
+капиллярного давления 201 \par
+6.40. Пропитка 213 \par
+6.50. Многомерное двухфазное течение. Численные решения 220 \par
+6.60. Турбулентное течение несмешивающихся жидкостей 221 \par
+Задачи 222 \par
+Литература 222 \par
+Глава 7. Задачи с подвижными границами. Вытеснение. \par
+Отложение твердых частиц 224 \par
+7.10. Вытеснение одной жидкости другой 224 \par
+7.11. Аналитическое решение задачи о прямолинейном  \par
+вытеснении 228 \par
+7.20. Двумерное вытеснение. Вытеснение водой при  \par
+коэффициенте подвижности, равном единице 230 \par
+7.21. Влияние коэффициента подвижности на величину  \par
+коэффициента заводненности 246 \par
+7.30. Фильтрация и отложение твердых частиц 249 \par
+7.40. Неустойчивость движения фронта и образование языков 256 \par
+Задачи 262 \par
+Литература 262 \par
+Глава 8. Совместное ламинарное течение смешивающихся \par
+жидкостей 264 \par
+8.10. Смешивающиеся и несмешивающиеся жидкости. Закон \par
+диффузии Фика 264 \par
+349 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 351{]}\par
+8.20. Вытеснение из капиллярной трубки в случае, когда  \par
+жидкости смешиваются 266 \par
+8.30. Вытеснение в пористой среде. Случай смешивающихся \par
+жидкостей 271 \par
+8.31. Теория дисперсии в пористых средах 274 \par
+8.40. Макроскопические характеристики вытеснения  \par
+смешивающихся жидкостей 278 \par
+8.50. Турбулентное течение смешивающихся жидкостей 281 \par
+Задачи 281 \par
+Литература 282 \par
+Глава 9. Теория моделирования 283 \par
+9.10. Понятие подобия 283 \par
+9.20. Основы теории моделирования 285 \par
+9.30. Масштабные модели и условия подобия 288 \par
+9.40. Примеры применения анализа размерностей в случае, \par
+когда известны уравнения, описывающие систему . . 290 \par
+9.50. Пример аналогового моделирования 299 \par
+9.60. Пример моделирования, когда уравнения,  \par
+описывающие систему, неизвестны 303 \par
+9.70. Частичное подобие в моделировании 306 \par
+9.80. Специальные вопросы моделирования пористых сред 310 \par
+9.90. Результаты изучения на моделях движения жидкостей \par
+в пористых средах 311 \par
+Приложение к главе 9 312 \par
+Задачи 313 \par
+Литература 313 \par
+Глава 10. Течение с фазовыми переходами 315 \par
+10.10. Течение с фазовыми переходами. Режим растворенного \par
+газа 315 \par
+10.20. Фазовое равновесие 315 \par
+10.30. Пересыщение и недосыщение 325 \par
+10.40. Математическое описание режима растворенного газа 329 \par
+10.50. Другой подход к описанию режима растворенного газа 333 \par
+10.60. Третий способ описания режима растворенного газа. \par
+Уравнения материального баланса 336 \par
+10.70. Общая схема описания течений с фазовыми переходами 340 \par
+Задачи 341 \par
+Литература 341 \par
+Указатель 343\par
+\endgroup
+
+% ===== Раздел 13 =====
+
+\section{Myron B. Allen. The Mathematics of Fluid Flow Through Porous Media. 2021}\label{section-13}
+
+Файл: \texttt{Allen-The-mathematics-of-fluid-flow-through-porous.pdf}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 9{]}\par
+vii\par
+Contents\par
+Preface\par
+xi\par
+1\par
+Introduction\par
+1\par
+1.1\par
+Historical Setting\par
+1\par
+1.2\par
+Partial Differential Equations (PDEs)\par
+2\par
+1.3\par
+Dimensions and Units\par
+4\par
+1.4\par
+Limitations in Scope\par
+5\par
+2\par
+Mechanics\par
+7\par
+2.1\par
+Kinematics of Simple Continua\par
+7\par
+2.1.1\par
+Referential and Spatial Coordinates\par
+7\par
+2.1.2\par
+Velocity and the Material Derivative\par
+9\par
+2.2\par
+Balance Laws for Simple Continua\par
+10\par
+2.2.1\par
+Mass Balance\par
+11\par
+2.2.2\par
+Momentum Balance\par
+13\par
+2.3\par
+Constitutive Relationships\par
+16\par
+2.3.1\par
+Body Force\par
+17\par
+2.3.2\par
+Stress in Fluids\par
+17\par
+2.3.3\par
+The Navier--Stokes Equation\par
+19\par
+2.4\par
+Two Classic Problems in Fluid Mechanics\par
+20\par
+2.4.1\par
+Hagen--Poiseuille Flow\par
+21\par
+2.4.2\par
+The Stokes Problem\par
+23\par
+2.5\par
+Multiconstituent Continua\par
+24\par
+2.5.1\par
+Constituents\par
+25\par
+2.5.2\par
+Densities and Volume Fractions\par
+26\par
+2.5.3\par
+Multiconstituent Mass Balance\par
+29\par
+2.5.4\par
+Multiconstituent Momentum Balance\par
+30\par
+\smallskip
+{[}Страница файла 10{]}\par
+viii\par
+Contents\par
+3\par
+Single-ﬂuid Flow Equations\par
+33\par
+3.1\par
+Darcy's Law\par
+33\par
+3.1.1\par
+Fluid Momentum Balance\par
+34\par
+3.1.2\par
+Constitutive Laws for the Fluid\par
+35\par
+3.1.3\par
+Filtration Velocity\par
+37\par
+3.1.4\par
+Permeability\par
+38\par
+3.2\par
+Non-Darcy Flows\par
+39\par
+3.2.1\par
+The Brinkman Law\par
+39\par
+3.2.2\par
+The Forchheimer Equation\par
+40\par
+3.2.3\par
+The Klinkenberg Effect\par
+41\par
+3.3\par
+The Single-fluid Flow Equation\par
+42\par
+3.3.1\par
+Fluid Compressibility and Storage\par
+43\par
+3.3.2\par
+Combining Darcy's Law and the Mass Balance\par
+44\par
+3.4\par
+Potential Form of the Flow Equation\par
+44\par
+3.4.1\par
+Conditions for the Existence of a Potential\par
+45\par
+3.4.2\par
+Calculating the Scalar Potential\par
+46\par
+3.4.3\par
+Piezometric Head\par
+47\par
+3.4.4\par
+Head-Based Flow Equation\par
+48\par
+3.4.5\par
+Auxiliary Conditions for the Flow Equation\par
+49\par
+3.5\par
+Areal Flow Equation\par
+51\par
+3.5.1\par
+Vertically Averaged Mass Balance\par
+52\par
+3.5.2\par
+Vertically Averaged Darcy's Law\par
+54\par
+3.6\par
+Variational Forms for Steady Flow\par
+55\par
+3.6.1\par
+Standard Variational Form\par
+55\par
+3.6.2\par
+Mixed Variational Form\par
+57\par
+3.7\par
+Flow in Anisotropic Porous Media\par
+58\par
+3.7.1\par
+The Permeability Tensor\par
+58\par
+3.7.2\par
+Matrix Representations of the Permeability Tensor\par
+59\par
+3.7.3\par
+Isotropy and Homogeneity\par
+61\par
+3.7.4\par
+Properties of the Permeability Tensor\par
+62\par
+3.7.5\par
+Is Permeability Symmetric?\par
+64\par
+4\par
+Single-ﬂuid Flow Problems\par
+67\par
+4.1\par
+Steady Areal Flows with Wells\par
+67\par
+4.1.1\par
+The Dupuit--Thiem Model\par
+67\par
+4.1.2\par
+Dirac 𝛿Models\par
+70\par
+4.1.3\par
+Areal Flow in an Infinite Aquifer with One Well\par
+73\par
+4.2\par
+The Theis Model for Transient Flows\par
+75\par
+4.2.1\par
+Model Formulation\par
+75\par
+4.2.2\par
+Dimensional Analysis of the Theis Model\par
+76\par
+4.2.3\par
+The Theis Drawdown Solution\par
+79\par
+4.2.4\par
+Solving the Theis Model via Similarity Methods\par
+80\par
+4.3\par
+Boussinesq and Porous Medium Equations\par
+84\par
+\smallskip
+{[}Страница файла 11{]}\par
+Contents\par
+ix\par
+4.3.1\par
+Derivation of the Boussinesq Equation\par
+86\par
+4.3.2\par
+The Porous Medium Equation\par
+88\par
+4.3.3\par
+A Model Problem with a Self-similar Solution\par
+89\par
+5\par
+Solute Transport\par
+95\par
+5.1\par
+The Transport Equation\par
+95\par
+5.1.1\par
+Mass Balance of Miscible Species\par
+96\par
+5.1.2\par
+Hydrodynamic Dispersion\par
+97\par
+5.2\par
+One-Dimensional Advection\par
+100\par
+5.2.1\par
+Pure Advection and the Method of Characteristics\par
+101\par
+5.2.2\par
+Auxiliary Conditions for First-Order PDEs\par
+103\par
+5.2.3\par
+Weak Solutions\par
+104\par
+5.3\par
+The Advection--Diffusion Equation\par
+106\par
+5.3.1\par
+The Moving Plume Problem\par
+106\par
+5.3.2\par
+The Moving Front Problem\par
+108\par
+5.4\par
+Transport with Adsorption\par
+111\par
+5.4.1\par
+Mass Balance for Adsorbate\par
+112\par
+5.4.2\par
+Linear Isotherms and Retardation\par
+113\par
+5.4.3\par
+Concave-down Isotherms and Front Sharpening\par
+114\par
+5.4.4\par
+The Rankine--Hugoniot Condition\par
+116\par
+6\par
+Multiﬂuid Flows\par
+121\par
+6.1\par
+Capillarity\par
+122\par
+6.1.1\par
+Physics of Curved Interfaces\par
+122\par
+6.1.2\par
+Wettability\par
+125\par
+6.1.3\par
+Capillarity at the Macroscale\par
+127\par
+6.2\par
+Variably Saturated Flow\par
+129\par
+6.2.1\par
+Pressure Head and Moisture Content\par
+129\par
+6.2.2\par
+The Richards Equation\par
+131\par
+6.2.3\par
+Alternative Forms of the Richards Equation\par
+132\par
+6.2.4\par
+Wetting Fronts\par
+133\par
+6.3\par
+Two-fluid Flows\par
+134\par
+6.3.1\par
+The Muskat--Meres Model\par
+134\par
+6.3.2\par
+Two-fluid Flow Equations\par
+136\par
+6.3.3\par
+Classification of Simplified Flow Equations\par
+137\par
+6.4\par
+The Buckley--Leverett Problem\par
+139\par
+6.4.1\par
+The Saturation Equation\par
+139\par
+6.4.2\par
+Welge Tangent Construction\par
+141\par
+6.4.3\par
+Conservation Form\par
+146\par
+6.4.4\par
+Analysis of Oil Recovery\par
+146\par
+6.5\par
+Viscous Fingering\par
+149\par
+6.5.1\par
+The Displacement Front and Its Perturbation\par
+150\par
+6.5.2\par
+Dynamics of the Displacement Front\par
+152\par
+\smallskip
+{[}Страница файла 12{]}\par
+x\par
+Contents\par
+6.5.3\par
+Stability of the Displacement Front\par
+153\par
+6.6\par
+Three-fluid Flows\par
+154\par
+6.6.1\par
+Flow Equations\par
+156\par
+6.6.2\par
+Rock-fluid Properties\par
+157\par
+6.7\par
+Three-fluid Fractional Flow Analysis\par
+158\par
+6.7.1\par
+A Simplified Three-fluid System\par
+159\par
+6.7.2\par
+Classification of the Three-fluid System\par
+160\par
+6.7.3\par
+Saturation Velocities and Saturation Paths\par
+162\par
+6.7.4\par
+An Example of Three-fluid Displacement\par
+164\par
+7\par
+Flows With Mass Exchange\par
+167\par
+7.1\par
+General Compositional Equations\par
+168\par
+7.1.1\par
+Constituents, Species, and Phases\par
+168\par
+7.1.2\par
+Mass Balance Equations\par
+169\par
+7.1.3\par
+Species Flow Equations\par
+170\par
+7.2\par
+Black-oil Models\par
+172\par
+7.2.1\par
+Reservoir and Stock-tank Conditions\par
+172\par
+7.2.2\par
+The Black-oil Equations\par
+173\par
+7.3\par
+Compositional Flows in Porous Media\par
+175\par
+7.3.1\par
+A Simplified Compositional Formulation\par
+175\par
+7.3.2\par
+Conversion to Molar Variables\par
+176\par
+7.4\par
+Fluid-phase Thermodynamics\par
+178\par
+7.4.1\par
+Flash Calculations\par
+178\par
+7.4.2\par
+Equation-of-state Methods\par
+179\par
+Appendix A\par
+Dedicated Symbols\par
+181\par
+Appendix B\par
+Useful Curvilinear Coordinates\par
+183\par
+B.1\par
+Polar Coordinates\par
+183\par
+B.2\par
+Cylindrical Coordinates\par
+184\par
+B.3\par
+Spherical Coordinates\par
+186\par
+Appendix C\par
+The Buckingham Pi Theorem\par
+189\par
+C.1\par
+Physical Dimensions and Units\par
+189\par
+C.2\par
+The Buckingham Theorem\par
+190\par
+Appendix D\par
+Surface Integrals\par
+193\par
+D.1\par
+Definition of a Surface Integral\par
+193\par
+D.2\par
+The Stokes Theorem\par
+194\par
+D.3\par
+A Corollary to the Stokes Theorem\par
+195\par
+Bibliography\par
+197\par
+Index\par
+207\par
+\endgroup
+
+% ===== Раздел 14 =====
+
+\section{Jacob Bear. Dynamics of Fluids in Porous Media. 1972}\label{section-14}
+
+Файл: \texttt{Bear-Dynamics-of-fluids-in-porous-media-1972.djvu}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 4{]}\par
+Contents \par
+Preface xvii \par
+CHAPTER 1 \par
+Introduction 1 \par
+1.1 Aquifers, Ground Water and Oil Reservoirs 1 \par
+1.1.1 Definitions 1 \par
+1.1.2 The Moisture Distribution in a Vertical Profile 2 \par
+1.1.3 Classification of Aquifers 4 \par
+1.1.4 Properties of Aquifers 7 \par
+1.1.5 The Oil Reservoir 8 \par
+1.2 The Porous Medium 13 \par
+1.3 The Continuum Approach to Porous Media 15 \par
+1.3.1 The Molecular and Microscopic Levels 15 \par
+1.3.2 Porosity and Representative Elementary Volume 19 \par
+1.3.3 Areal and Linear Porosities 21 \par
+1.3.4 Velocity and Specific Discharge 22 \par
+1.3.5 Concluding Remarks 24 \par
+CHAPTER 2 \par
+Fluids and Porous Matrix Properties 27 \par
+2.1 Fluid Density 27 \par
+2.1.1 Definitions 27 \par
+2.1.2 Mixture of Fluids 30 \par
+2.1.3 Measurement of Density 31 \par
+2.2 Fluid Viscosity 32 \par
+2.2.1 Definition 32 \par
+2.2.2 Non-Newtonian Fluids 33 \par
+2.2.3 Units 34 \par
+2.2.4 Effect of Pressure and Temperature 34 \par
+2.2.5 Measurement of Viscosity 35 \par
+2.3 Fluid Compressibility 37 \par
+2.4 Statistical Description of Porous Media 38 \par
+2.4.1 Particle-Size Distribution 39 \par
+2.4.2 Pore-Size Distribution 41 \par
+2.4.3 Other Statistical Descriptions 42 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 5{]}\par
+2.5 Porosity 43 \par
+2.5.1 Porosity and Effective Porosity 43 \par
+2.5.2 Porosity, Structure and Packing 45 \par
+2.5.3 Porosity Measurement 47 \par
+2.6 Specific Surface 50 \par
+2.6.1 Definitions 50 \par
+2.6.2 Measurement of Specific Surface 51 \par
+2.7 Matrix and Medium Compressibility 52 \par
+CHAPTER 3 \par
+Pressure and Piezometric Head 59 \par
+3.1 Stress at a Point 59 \par
+3.2 Hydrostatic Pressure Distribution 62 \par
+3.3 Piezometric Head 63 \par
+CHAPTER 4 \par
+The Fundamental Fluid Transport Equations in Porous Media 65 \par
+4.1 Particles, Velocities and Fluxes in a Fluid Continuum 65 \par
+\textquotesingle{} 4.1.1 Definitions of Particles and Velocities 65 \par
+4.1.2 Diffusive Velocities and Fluxes 68 \par
+4.1.3 The Eulerian and Lagrangian Points of View 70 \par
+4.1.4 The Substantial Derivative 7.1 \par
+4.2 The General Conservation Principle 74 \par
+4.3 Equations of Mass, Momentum and Energy Conservation in a Fluid \par
+Continuum 77 \par
+4.3.1 Mass Conservation of a Species 77 \par
+4.3.2 Mass Conservation of a Fluid System 78 \par
+4.3.3 Conservation of Linear Momentum of a Species a 79 \par
+4.3.4 Conservation of Linear Momentum of a Fluid System 80 \par
+4.4 Constitutive Assumptions and Coupled Processes 82 \par
+4.4.1 General Considerations 82 \par
+4.4.2 Principles to be Used in Forming Constitutive Equations 84 \par
+4.4.3 Coupled Processes 85 \par
+4.5 A Porous Medium Model 90 \par
+4.5.1 The Conceptual Model Approach 90 \par
+4.5.2 A Model of Flow Through a Porous Medium 92 \par
+4.5.3 Frames of Reference 93 \par
+4.5.4 An Averaging Procedure 95 \par
+4.6 Equations of Volume and Mass Conservation 98 \par
+4.6.1 Equation of Volume Conservation 98 \par
+4.6.2 Equation of Mass Conservation of a Species in Solution 100 \par
+4.6.3 Equation of Mass Conservation 102 \par
+4.7 Equation of Motion 104 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 6{]}\par
+4.8 Tortuosity and Permeability 106 \par
+4.8.1 Relationship Between Tortuosity and Permeability 106 \par
+4.8.2 Tortuosity and Other Transport Coefficients 112 \par
+4.8.3 Formation Factor and Resistivity Index (Amyx 1960) in Reservoir \par
+Engineering 113 \par
+CHAPTER 5 \par
+The Equation of Motion of a Homogeneous Fluid 119 \par
+5.1 The Experimental Law of Darcy 119 \par
+5.2 Generalization of Darcy\textquotesingle s Law 122 \par
+5.2.1 Isotropic Medium 122 \par
+5.2.2 Anisotropic Medium 123 \par
+5.3 Deviations from Darcy\textquotesingle s Law 125 \par
+5.3.1 The Upper Limit 125 \par
+5.3.2 The Lower Limit 127 \par
+5.3.3 The Slip Phenomenon 128 \par
+5.4 Rotational and Irrotational Motion 129 \par
+5.4.1 The Potential and Pseudopotential 129 \par
+5.4.2 Irrotational Flow 131 \par
+5.5 Hydraulic Conductivity of Isotropic Media 132 \par
+5.5.1 Hydraulic Conductivity and Permeability 132 \par
+5.5.2 Units and Examples 135 \par
+5.6 Anisotropic Permeability 136 \par
+5.6.1 The Principal Directions 137 \par
+5.6.2 Directional Permeability 143 \par
+5.7 Measurement of Hydraulic Conductivity 148 \par
+5.7.1 General 148 \par
+5.7.2 The Constant Head Permeameter 149 \par
+5.7.3 The Falling Head Permeameter 150 \par
+5.7.4 Determining Anisotropic Hydraulic Conductivity 150 \par
+5.8 Layered Porous Media 151 \par
+5.8.1 Flow Normal and Parallel to the Medium Layers 151 \par
+5.8.2 Equivalent Hydraulic Conductivity of Arbitrarily Directed Flow . . 155 \par
+5.8.3 A Layered Medium as an Equivalent Anisotropic Medium 156 \par
+5.8.4 Girinskii\textquotesingle s Potential 157 \par
+5.9 Compressible Fluids 159 \par
+5.10 Derivations of Darcy\textquotesingle s Law 161 \par
+5.10.1 Capillary Tube Models 162 \par
+5.10.2 Fissure Models 164 \par
+5.10.3 Hydraulic Radius Models 165 \par
+5.10.4 Resistance to Flow Models 167 \par
+5.10.5 Statistical Models 171 \par
+5.10.6 Averaging the Navier-Stokes Equations 173 \par
+5.10.7 Ferrandon\textquotesingle s Model 175 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 7{]}\par
+5.11 Flow At Large Reynolds Numbers 176 \par
+5.11.1 The Phenomenon 176 \par
+5.11.2 Turbulence, Inertial Forces and Separation 177 \par
+5.11.3 Some Examples of Proposed Nonlinear Motion Equations .... 182 \par
+5.12 Seepage Forces and Stresses 184 \par
+5.12.1 The Forces 184 \par
+5.12.2 Piping and Quicksand 186 \par
+CHAPTER 6 \par
+Continuity and Conservation Equations for a Homogeneous Fluid ... 195 \par
+6.1 The Control Volume 195 \par
+6.2 Mass Conservation in a Nondeformable Porous Matrix 196 \par
+6.2.1 The Basic Continuity Equation 196 \par
+6.2.2 Continuity Equation for an Incompressible Fluid 198 \par
+6.2.3 Continuity Equation for a Compressible Fluid 200 \par
+6.3 Mass Conservation in a Consolidating Medium 202 \par
+6.3.1 Vertical Compressibility Only 203 \par
+6.3.2 Extension to Three Phases and to Three-Dimensional Consolidation . 208 \par
+6.3.3 Barometric Efficiency of Aquifers 211 \par
+6.4 Continuity Equations for Flow in Confined and Leaky Aquifers 213 \par
+6.4.1 The Horizontal Flow Approximation 213 \par
+6.4.2 Flow in a Confined Aquifer 214 \par
+6.4.3 Flow in a Leaky Aquifer 216 \par
+6.4.4 Averaging the Exact Equations over a Vertical Line 218 \par
+6.4.5 The Boltzmann Transformation 221 \par
+6.5 Stream Functions 222 \par
+6.5.1 Pathlines, Streamlines, Streaklines and Fronts 223 \par
+6.5.2 The Stream Function in Two-Dimensional Flow 225 \par
+6.5.3 The Stream Functions in Three-Dimensional Flow 226 \par
+6.5.4 The Partial Differential Equations for the Lagrange and Stokes Stream \par
+Functions 230 \par
+6.5.5 The Relationships between the Potential and the Stream Functions 233 \par
+6.5.6 Solving Problems in the q\textgreater-ifi Plane 235 \par
+6.6 Flow Nets and Ground Water Contour Maps 236 \par
+6.6.1 The \textless p-tj) Flow Net 236 \par
+6.6.2 The Ground Water Contour Map 239 \par
+6.7 The Partial Differential Equations Describing Flow of an Inhomogeneous \par
+Incompressible Fluid in Terms of W 241 \par
+6.7.1 Two-Dimensional Flow 241 \par
+6.7.2 Axisymmetric Flow 243 \par
+CHAPTER 7 \par
+Solving Boundary and Initial Value Problems 247 \par
+7.1 Initial and Boundary Conditions 248 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 8{]}\par
+7.1.1 Boundary of Prescribed Potential 250 \par
+7.1.2 Boundary of Prescribed Flux 251 \par
+7.1.3 The Steady Free (or Phreatic) Surface without Accretion 252 \par
+7.1.4 The Unsteady Free (or Phreatic) Surface without Accretion .... 254 \par
+7.1.5 The Steady Free (or Phreatic) Surface with Accretion 256 \par
+7.1.6 The Unsteady Free (or Phreatic) Surface with Accretion 258 \par
+7.1.7 Boundary of Saturated Zone (or of Capillary Fringe) 259 \par
+7.1.8 The Seepage Face 260 \par
+7.1.9 Capillary Exposed Faces 262 \par
+7.1.10 Discontinuity in Permeability 263 \par
+7.1.11 A Note on Anisotropic Media 269 \par
+7.1.12 Boundary Conditions in Terms of Pressure or Density 270 \par
+7.2 A Well Posed Problem 270 \par
+7.3 Description of Boundaries in the Hodograph Plane 272 \par
+7.3.1 The Hodograph Plane 272 \par
+7.3.2 Boundaries in the Hodograph Plane 274 \par
+7.3.3 Examples of Hodograph Representation of Boundaries 280 \par
+7.3.4 Intersection of Boundaries of Different Types 284 \par
+7.4 The Relations between Solutions of Flow Problems in Isotropic and  \par
+Anisotropic Media 289 \par
+7.4.1 The Flow Equations 290 \par
+7.4.2 Relationships among Parameters in the Two Systems 291 \par
+7.4.3 Examples 296 \par
+7.5 Superposition and Duhamel\textquotesingle s Principles 297 \par
+7.5.1 Superposition 297 \par
+7.5.2 Unsteady Flow with Boundary Conditions Independent of Time . . 299 \par
+7.5.3 Unsteady Flow with Time-Dependent Boundary Conditions .... 300 \par
+7.6 Direct Integration in One-Dimensional Problems 301 \par
+7.6.1 Solution of the One-Dimensional Continuity Equation 301 \par
+7.6.2 Advance of a Wetting Front 303 \par
+7.7 The Method of Images 304 \par
+7.7.1 Principles 304 \par
+7.7.2 Examples 306 \par
+7.8 Methods Based on the Theory of Functions 312 \par
+7.8.1 Complex Variables and Analytic Functions 313 \par
+7.8.2 The Complex Potential and the Complex Specific Discharge 316 \par
+7.8.3 Sources and Sinks 316 \par
+7.8.4 Conformal Mapping 324 \par
+7.8.5 The Schwarz-Christoffel Transformation 333 \par
+7.8.6 Fictitious Flow in the w-Plane 337 \par
+7.9 Numerical Methods 338 \par
+7.9.1 Method of Finite Differences 338 \par
+7.9.2 The Method of Finite Elements 346 \par
+7.9.3 Relaxation Methods 348 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 9{]}\par
+7.9.4 Schmidt\textquotesingle s Graphic Method 350 \par
+7.10 Flow Nets by Graphic Methods 351 \par
+CHAPTER 8 \par
+Unconf ined Flow and the Dupuit Approximation 361 \par
+8.1 The Dupuit Approximation 361 \par
+8.1.1 The Dupuit Assumptions 361 \par
+8.1.2 Examples of Application to Hydraulic Steady Flows in Homogeneous \par
+Media 366 \par
+8.1.3 Unconf ined Flow in an Aquifer with Horizontal Stratification . . . 369 \par
+8.1.4 Unconf ined Flow in an Aquifer with Vertical Strata 372 \par
+8.1.5 Unconf ined Flow in a Two-Dimensional Inhomogeneous Medium . . 373 \par
+8.2 Continuity Equations Based on the Dupuit Approximation 374 \par
+8.2.1 The Continuity Equation 374 \par
+8.2.2 Boundary and Initial Conditions 378 \par
+8.2.3 Some Solutions of Forchheimer\textquotesingle s Equation 379 \par
+8.2.4 Some Solutions of Boussinesq\textquotesingle s Equation 381 \par
+8.3 The Hodograph Method 388 \par
+8.3.1 The Functions to and w 388 \par
+8.3.2 The Hodograph Method 389 \par
+8.3.3 Examples without a Seepage Face 391 \par
+8.3.4 Hamel\textquotesingle s Mapping Function 398 \par
+8.3.5 Zhukovski\textquotesingle s and Other Mapping Functions 403 \par
+8.3.6 A Graphic Solution of the Hodograph Plane 406 \par
+8.4 Linearization Techniques and Solutions 408 \par
+8.4.1 First Method of Linearization of the Boussinesq Equation 408 \par
+8.4.2 The Second Method of Linearization of the Boussinesq Equation . . 417 \par
+8.4.3 The Third Method of Linearization of the Boussinesq Equation . . . 419 \par
+8.4.4 The Method of Successive Steady States 420 \par
+8.4.5 The Method of Small Perturbations 422 \par
+8.4.6 The Shallow Flow Approximation 430 \par
+CHAPTER 9 \par
+Flow of Immiscible Fluids 439 \par
+9.1 Introduction 439 \par
+9.1.1 Types of Two-Fluid Flows 439 \par
+9.1.2 The Abrupt Interface Approximation 439 \par
+9.1.3 Occurrence 440 \par
+9.2 Interfacial Tension and Capillary Pressure 441 \par
+9.2.1 Saturation and Fluid Content 441 \par
+9.2.2 Interfacial Tension and Wettability 441 \par
+9.2.3 Capillary Pressure 444 \par
+9.2.4 Drainage and Imbibition 449 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 10{]}\par
+9.2.5 Saturation Discontinuity at a Medium Discontinuity 452 \par
+9.2.6 Laboratory Measurement of Capillary Pressure 453 \par
+9.3 Simultaneous Flow of Two Immiscible Fluids 457 \par
+9.3.1 The Basic Motion Equations 457 \par
+9.3.2 Relative Permeability 459 \par
+9.3.3 Mass Conservation in Multiphase Flow 466 \par
+9.3.4 Statement of the Multiphase Flow Problem 466 \par
+9.3.5 The Buckley-Leverett Equations 468 \par
+9.3.6 Simultaneous Flow of a Liquid and a Gas 472 \par
+9.3.7 Laboratory Determination of Relative Permeability 473 \par
+9.4 Unsaturated Flow 474 \par
+9.4.1 Capillary Pressure and Retention Curve 475 \par
+9.4.2 The Capillary Fringe 480 \par
+9.4.3 Field Capacity and Specific Yield 483 \par
+9.4.4 The Motion Equation 487 \par
+9.4.5 Relative Permeability of Unsaturated Soils 491 \par
+9.4.6 The Continuity Equation 495 \par
+9.4.7 Methods of Solution and Examples 503 \par
+9.4.8 Additional Comments on Infiltration and Redistribution of Moisture 513 \par
+9.4.9 Comments on Vapor Movement in Unsaturated Flow 515 \par
+9.5 Immiscible Displacement with an Abrupt Interface 519 \par
+9.5.1 The Abrupt Interface Approximation 519 \par
+9.5.2 Piezometric Heads and Dynamic Equilibrium Conditions at a Stationary \par
+Interface 521 \par
+9.5.3 The Boundary Conditions along an Interface 524 \par
+9.5.4 Horizontal Interface Displacement 526 \par
+9.5.5 Interface Displacement in the Vertical Plane 533 \par
+9.5.6 Numerical and Graphic Methods 536 \par
+9.5.7 Approximate Solutions based on Linearization 538 \par
+9.5.8 Interface Stability 544 \par
+9.6 Determining the Steady Interface by the Hodograph Method 547 \par
+9.6.1 Boundary Conditions 548 \par
+9.6.2 Description of Boundaries in the Hodograph Plane 549 \par
+9.6.3 Examples 549 \par
+9.7 The Interface in a Coastal Aquifer 557 \par
+9.7.1 Occurrence 557 \par
+9.7.2 The Ghyben-Herzberg Approximation 559 \par
+9.7.3 Determining the Shape of a Stationary Interface by the Dupuit- \par
+Ghyben-Herzberg Approximation 561 \par
+9.7.4 Approximate Solution for the Moving Interface 563 \par
+9.7.5 Interface Upconing 569 \par
+9.7.6 The Dupuit-Ghyben-Herzberg Approximation for an Unsteady \par
+Interface in a Thick Aquifer 573 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 11{]}\par
+CHAPTER 10 \par
+Hydrodynamic Dispersion 579 \par
+10.1 Definition of Hydrodynamic Dispersion 579 \par
+10.2 Occurrence of Dispersion Phenomena 582 \par
+10.3 Review of Some Hydrodynamic Dispersion Theories 582 \par
+10.3.1 Capillary Tube and Cell Models 583 \par
+10.3.2 Statistical Models 587 \par
+10.3.3 Spatial Averaging 603 \par
+10.4 Parameters of Dispersion 605 \par
+10.4.1 The Coefficients of Mechanical Dispersion and Hydrodynamic \par
+Dispersion 605 \par
+10.4.2 The Medium\textquotesingle s Dispersivity 611 \par
+10.4.3 Dispersivity-Permeability Relationship 615 \par
+10.5 The Governing Equations and Boundary Conditions 617 \par
+10.5.1 The Partial Differential Equation in Cartesian Coordinates . . . .617 \par
+10.5.2 The Partial Differential Equation in Curvilinear Coordinates . . . 619 \par
+10.5.3 Initial and Boundary Conditions 622 \par
+10.5.4 Solving the Boundary Value Problems 624 \par
+10.5.5 The Use of Nondimensional Variables 626 \par
+10.6 Some Solved Problems 626 \par
+10.6.1 One-dimensional Flow 627 \par
+10.6.2 Uniform Flow in a Plane 633 \par
+10.6.3 Plane Radial Flow 634 \par
+10.7 Heat and Mass Transfer 641 \par
+10.7.1 Modes of Heat Transfer in a Porous Medium 641 \par
+10.7.2 Formulation of the Problem of Heat and Mass Transfer in a Fluid \par
+Continuum 643 \par
+10.7.3 Formulation of the Problem of Heat and Mass Transfer in a Porous \par
+Medium 644 \par
+10.7.4 Comments on Some Heat and Mass Transfer Coefficients 647 \par
+10.7.5 Simplifying the Macroscopic Heat and Mass Transfer Equations . 651 \par
+10.7.6 Convective Currents and Instability 653 \par
+10.7.7 Some Similitude Considerations 660 \par
+CHAPTER 11 \par
+Models and Analogs 665 \par
+11.1 General 665 \par
+11.2 Scaling Principles and Procedure 668 \par
+11.2.1 The Two Systems 668 \par
+11.2.2 Geometric Similarity 669 \par
+11.2.3 Kinematic Similarity 670 \par
+11.2.4 Dynamic Similarity 670 \par
+11.2.5 Dimensional Analysis 671 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 12{]}\par
+11.2.6 Inspectional Analysis 673 \par
+11.2.7 Modified Inspectional Analysis 676 \par
+11.3 The Sand Box Model 678 \par
+11.3.1 Description 678 \par
+11.3.2 Scales 680 \par
+11.4 The Viscous Flow Analogs 687 \par
+11.4.1 General 687 \par
+11.4.2 Description of the Vertical Hele-Shaw Analog 687 \par
+11.4.3 Establishing the Analogy between Analog and Prototype ..... 690 \par
+11.4.4 Scales for the Vertical Analog 693 \par
+11.4.5 Recommended Applications of Vertical Analog 696 \par
+11.4.6 The Liquids 697 \par
+11.4.7 The Horizontal Hele-Shaw Analog---Description and Scales . . . 697 \par
+11.4.8\^{} Simulation of an Infinite Horizontal Aquifer 701 \par
+11.5 Electric Analogs 702 \par
+11.5.1 Description of the Electrolytic Tank and the Conducting Paper \par
+Analogs 702 \par
+11.5.2 Scales for the Electrolytic Tank Analog 708 \par
+11.5.3 The Resistance Network Analog for Steady Flow 710 \par
+11.5.4 The Resistance-Capacitance Network for Unsteady Flow 716 \par
+11.5.5 The Ion Motion Analog 719 \par
+11.6 The Membrane Analog 722 \par
+11.7 Summary 725 \par
+Answers to Exercises 729 \par
+Bibliography 733 \par
+Index 757\par
+\endgroup
+
+% ===== Раздел 15 =====
+
+\section{Г. И. Баренблатт, В. М. Ентов, В. М. Рыжик. Движение жидкостей и газов в природных пластах. 1984}\label{section-15}
+
+Файл: \texttt{Barenblatt-et-al-1984.pdf}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 208{]}\par
+ОГЛАВЛЕНИЕ\par
+ПРЕДИСЛОВИЕ\par
+Глава 1\par
+ОСНОВНЫЕ ПОНЯТИЯ\par
+ПОДЗЕМНОЙ \par
+ГИДРО-\par
+ГАЗОДИНАМИКИ\par
+Глава 2\par
+КЛАССИЧЕСКИЕ МО-\par
+ДЕЛИ ТЕОРИИ ФИЛЬ-\par
+ТРАЦИИ \par
+ОДНОРОД-\par
+НОЙ ж и д к о с т и\par
+Глава 3\par
+НЕКЛАССИЧЕСКИЕ\par
+МОДЕЛИ ДВИЖЕНИЯ\par
+ОДНОРОДНЫХ ЖИД-\par
+КОСТЕЙ\par
+Глава 4\par
+ДВУХФАЗНАЯ ФИЛЬТ-\par
+РАЦИЯ И ТЕОРИЯ ВЫ-\par
+ТЕСНЕНИЯ НЕФТИ ВО-\par
+ДОЙ\par
+Глава 5\par
+ФИЗИКО-ХИМИЧЕ-\par
+СКАЯ \par
+ПОДЗЕМНАЯ\par
+ГИДРОДИНАМИКА\par
+НЕФТЯНОГО \par
+ПЛАСТА\par
+СПИСОК ЛИТЕРАТУРЫ\par
+§ 1. Особенности теории \par
+движения \par
+жидкости\par
+и газа в природных пластах .\par
+.\par
+.\par
+.\par
+. \par
+5\par
+§ 2. Пористые \par
+среды \par
+\textquotesingle. \par
+7\par
+§ 3. Закон Дарси, пределы его применимости\par
+и уточнения \par
+9\par
+§ 4. Уравнение \par
+неразрывности \par
+и \par
+основные\par
+уравнения теории фильтрации \par
+14\par
+§ 1. Простейшие установившиеся напорные те-\par
+чения \par
+. \par
+20\par
+§ 2. Качественные методы теории напорных те\^{}\par
+чений \par
+28\par
+§ 3. Установившиеся \par
+безнапорные \par
+течения \par
+36\par
+§ 4. Нестационарное \par
+движение \par
+однородной\par
+сжимаемой \par
+жидкости. \par
+Линейная \par
+теория \par
+38\par
+§ 5. Нестационарное \par
+движение \par
+однородных\par
+жидкостей. Нелинейные эффекты \par
+.\par
+.\par
+. \par
+51\par
+§ 1. Теория фильтрации неньютоновских жид-\par
+костей. Закон фильтрации \par
+74\par
+§ 2. Стационарные задачи фильтрации \par
+ненью-\par
+тоновских \par
+жидкостей \par
+.\par
+.\par
+.\par
+.\par
+.\par
+.\par
+. \par
+79\par
+§ 3. Нестационарные \par
+задачи \par
+фильтрации не-\par
+ньютоновских \par
+жидкостей \par
+93\par
+§ 4. Неравновесность \par
+при фильтрации \par
+одно-\par
+родных \par
+жидкостей. \par
+Движение в трещи-\par
+новато-пористых и \par
+слоисто-неоднородных\par
+пластах \par
+104\par
+§ 1. Основные представления теории двухфаз-\par
+ного течения в пористых средах . . . . 1 1 8\par
+§ 2. Структура двухфазного течения при круп-\par
+номасштабном описании. Задача Баклея ---\par
+Леверетта \par
+128\par
+§ 3. Структура течения при мелкомасштабном\par
+описании. \par
+Стабилизированная \par
+зона. Ка-\par
+пиллярные \par
+эффекты в пористых \par
+средах 136\par
+§ 4. Неравновесные эффекты при двухфазной\par
+фильтрации \par
+150\par
+§ 5. Устойчивость вытеснения несмешивающих-\par
+ся жидкостей \par
+155\par
+§ 6. Теория вытеснения неньютоновских жид-\par
+костей. \par
+Влияние \par
+вязко-пластических\par
+свойств нефти на нефтеотдачу \textquotesingle{} \par
+.\par
+.\par
+.\par
+. 1 61\par
+§ 1 Процессы \par
+тепло- и массопереноса в по-\par
+ристой \par
+среде \par
+172\par
+§ 2. Вытеснение \par
+нефти растворами \par
+активных\par
+примесей \par
+. \par
+182\par
+§ 3. Эффекты диффузии и неравновесности в\par
+задачах вытеснения нефти раствором ак-\par
+тивной примеси \par
+200\par
+20"»\par
+\endgroup
+
+% ===== Раздел 16 =====
+
+\section{M. Muskat. The Flow of Homogeneous Fluids Through Porous Media. Английское издание}\label{section-16}
+
+Файл: \texttt{Muskat-eng.djvu}.
+
+\begingroup\small\setlength{\parindent}{0pt}\setlength{\parskip}{1pt}
+{[}Страница файла 12{]}\par
+CONTENTS \par
+Page \par
+Preface vii \par
+PART I. FOUNDATIONS \par
+CHAPTER I \par
+Introduction 1 \par
+1.1. Scope of Subject -. 3 \par
+1.2. Homogeneous Fluids 4 \par
+1.3. Porous Media 6 \par
+1.4. General Qualifications Governing the Analytical Theory. . 8 \par
+1.5. The Nature of Porous Media 10 \par
+1.6. Systematic Packing of Spheres 10 \par
+1.7. The Packing of Natural Materials 13 \par
+1.8. Compaction of Sand and Gravel 14 \par
+1.9. Compaction in Clay 16 \par
+1.10. Effect of Compaction and Alteration of Sediments on \par
+Permeability 17 \par
+1.11. Kinds of Rock and Their Fluid-bearing Properties .... 17 \par
+1.12. Structure of Rocks in Relation to Underground Fluids . . 22 \par
+1.13. Subsurface Fluids---Their Occurrence and Migratory \par
+Behavior 26 \par
+1.14. Occurrence of Ground Water 28 \par
+1.15. Water Content of Unconsolidated Surface Sediments ... 30 \par
+1.16. Fluid Movements in the Capillary Zone 30 \par
+1.17. Fluid Movements below the Water Table. The Surface \par
+Zone 34 \par
+1.18. Fluid Movements below the Water Table. The Deep Zones 38 \par
+1.19. The Occurrence of Connate Waters 40 \par
+1.20. The Migration of Connate Waters 43 \par
+1.21. The Influence of Compaction of Sediments on Migration of \par
+Fluids. 44 \par
+1.22. The Occurrence of Gas and Oil 47 \par
+1.23. The Source of Petroleum---Gas and Oil 48 \par
+1.24. The Migration and Accumulation of Gas and Oil 50 \par
+CHAPTER II \par
+Darcy\textquotesingle s Law and the Measurement of the Permeability of \par
+Porous Media 55 \par
+2.1. Darcy\textquotesingle s Law 55 \par
+2.2. The Range of Validity of Darcy\textquotesingle s Law 56 \par
+xiii \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 13{]}\par
+xiv \par
+CONTENTS \par
+P\textbackslash GK \par
+2.3. The Constant in Darcy\textquotesingle s Law. The Permeability of a \par
+Porous Medium 69 \par
+2.4. Permeability Units and Nomenclature 74 \par
+2.5. The Principle of the Method of Measurement and of the \par
+Calculation of the Permeability of Porous Media.... 76 \par
+2.6. The Measurement of the Permeability of Unconsolidated \par
+Sands 79 \par
+2.7. The General Technique for Permeability Determinations of \par
+Consolidated Porous Media 85 \par
+2.8. Further Details for Permeability Measurements with \par
+Liquids 89 \par
+2.9. Further Details for Permeability Measurements with Gases 91 \par
+2.10. Gases versus Liquids for Permeability Measurements ... 91 \par
+2.11. Permeability Measurements in the Field 93 \par
+2.12. Typical Permeability Values 101 \par
+2.13. Porosity Measurements 113 \par
+CHAPTER III \par
+General Hydrodynamical Equations for the Flow of Fluids \par
+through Porous Media 121 \par
+3.1. Fundamental Hydrodynamic Relations 121 \par
+3.2. The Classical Hydrodynamics 125 \par
+3.3. Generalized Form of Darcy\textquotesingle s Law 127 \par
+3.4. The Equations of Motion 131 \par
+3.5. Boundary and Initial Conditions 136 \par
+3.6. Analogies with Other Physical Problems 139 \par
+3.7. Other Coordinate Systems 141 \par
+3.8. Summary 143 \par
+PART II. STEADY-STATE FLOW OF LIQUIDS \par
+CHAPTER IV \par
+Two-dimensional Flow Problems and Potential-theory Methods 149 \par
+4.1. Introduction 149 \par
+4.2. The Radial Flow into a Well 150 \par
+4.3. Fourier Series 156 \par
+4.4. Unsymmetrical Flow into a Well 163 \par
+4.5. Arbitrary Pressure Distributions over the Boundaries. . . 163 \par
+4.6. The Flow between Nonconcentric Circular Boundaries. \par
+Green\textquotesingle s Function 169 \par
+4.7. The Flow from an Infinite Line Source into a Well. The \par
+Line Drive. The Method of Images 175 \par
+4.8. The Flow from a Finite Line Source into an Infinite Sand. \par
+The Method of Conjugate Functions 181 \par
+4.9. The Flow from a Finite Line Source into a Well. Conjugate- \par
+function Transformations. Infinite Sets of Images . . . 186 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 14{]}\par
+CONTENTS \par
+xv \par
+Page \par
+4.10. The Uplift Pressure on a Dam of Extended Base Width. \par
+No Sheet Piling 192 \par
+4.11. The Uplift Pressure on a Dam with Sheet Piling Present. \par
+The Schwarz Christoff el Theorem 195 \par
+4.12. The Seepage Flux under Dams of Extended Base Width. \par
+No Sheet Piling. Elliptic-function Transformations . . 208 \par
+4.13. The Seepage Flux under Dams of Extended Base Width; \par
+Sheet Piling Present 215 \par
+4.14. The Seepage Flux underneath Coffer Dams 221 \par
+4.15. Anisotropic Media 225 \par
+4.16. General Potential-theory Results. Green\textquotesingle s Reciprocation \par
+Theorem 227 \par
+4.17. Approximate and Nonanalytic Methods of Solving Two- \par
+dimensional Flow Problems 234 \par
+4.18. Summary 244 \par
+CHAPTER V \par
+Theeb-dimensional Pkoblems 258 \par
+5.1. Introduction 258 \par
+5.2. Spherical Flow 259 \par
+5.3. Partially Penetrating Wells. Potential Distributions. . . 263 \par
+5.4. The Production Capacities of Partially Penetrating Wells . 271 \par
+5.5. Partially Penetrating Wells in Anisotropic Sands 277 \par
+5.6. Summary 281 \par
+CHAPTER VI \par
+Gbavity-flow Systems 287 \par
+6.1. Introduction 287 \par
+6.2. The Drainage of a Sloping Sand. The Problem of Hopf \par
+and Trefftz 292 \par
+6.3. The Treatment of Two-dimensional Gravity-flow Systems \par
+by the Method of Hodographs. The Mapping of the \par
+Boundaries 300 \par
+6.4. The Seepage through a Dam with Vertical Faces; Analytical \par
+Theory 303 \par
+6.5. Numerical Applications 309 \par
+6.6. The Study of Gravity-flow Systems by Means of Electrical \par
+Models 318 \par
+6.7. Some Exact Solutions of Laplace\textquotesingle s Equation Appropriate to \par
+Gravity-flow Systems 323 \par
+6.8. The Seepage of Water from Canals or Ditches into Sands \par
+with Deep-lying Water Tables 331 \par
+6.9. The Seepage of Water from Canals or Ditches into Sands \par
+Underlain by Highly Permeable Gravel Beds at Shallow \par
+Depths 336 \par
+6.10. An Approximate Theory of the Seepage of Water through \par
+Dams with Sloping Faces 338 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 15{]}\par
+xvi CONTENTS \par
+P\textbackslash GE \par
+6.11. Seepage Streams from Canals and Ditches Which Merge \par
+with Shallow Water Tables 346 \par
+6.12. The Approximate Treatment of Some Irrigation and  \par
+Drainage Problems 353 \par
+6.13. Subirrigation ... 354 \par
+6.14. The Problem of Water Logging 355 \par
+6.15. The Erosion Problem 355 \par
+6.16. Tile Drainage 356 \par
+6.17. The Dupuit-Forchheimer Theory of Gravity-flow Systems. 359 \par
+6.18. Sand-model Experiments with Three-dimensional Gravity- \par
+flow Systems 365 \par
+6.19. Composite Pressure-head and Gravity-flow Systems. . . . 375 \par
+6.20. An Approximate Potential Theory of the Flux through \par
+Gravity-flow Systems 377 \par
+6.21. Summary 385 \par
+CHAPTER VII \par
+Systems op Nonuniform Permeability 400 \par
+7.1. Introduction. Surfaces of Discontinuity 400 \par
+7.2. Continuous Variations in the Permeability 401 \par
+7.3. Discontinuous Radial Variations in the Permeability . . . 403 \par
+7.4. Adjacent Beds of Different Permeability. Fluid Flow in \par
+Fractured Limestones 409 \par
+7.5. Bounded Limestone---Fracture Systems 417 \par
+7.6. The Theory of the Acid Treatment of Limestone Wells . . 420 \par
+7.7. The Effect of Acid Treatment in Radial Systems 422 \par
+7.8. The Effect of Acid Treatment in Highly Fractured  \par
+Limestones 425 \par
+7.9. Partially Penetrating Wells in Stratified Horizons 429 \par
+7.10. The Effect of a Sanded Liner on the Production Capacity \par
+of a Well 439 \par
+7.11. Summary 447 \par
+CHAPTER VIII \par
+Two-fluid Systems 453 \par
+8.1. Introduction 453 \par
+8.2. Edge-water Encroachment. General Nature and  \par
+Formulation of the Problem 453 \par
+8.3. Linear Encroachment 459 \par
+8.4. Two-dimensional Radial P\textquotesingle ncroachment 402 \par
+8.5. The History of a Line of Fluid Particles in a Homogeneous \par
+System 466 \par
+8.6. The Line Drive into a Single Well 468 \par
+8.7. The Direct Drive between Two Wells 472 \par
+8.8. The Effect of Gravity on the Shape of the Encroaching \par
+Interface 476 \par
+8.9. The Effect of the Differences in Viscosity between the \par
+Fluids on the Two Sides of the Interface 478 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 16{]}\par
+CONTENTS xvii \par
+Page \par
+8.10. Water Coning; Physical Basis of the Theory 480 \par
+8.11. Analytical Development 487 \par
+8.12. The Suppression of Water Coning by Shale Lenses .... 496 \par
+8.13. Summary 499 \par
+CHAPTER IX \par
+Multiple-well Systems 507 \par
+9.1. Introduction 507 \par
+9.2. Small Groups of Wells. General Theory 509 \par
+9.3. Examples 511 \par
+9.4. The Dependence of the Production Capacity on the Number \par
+of Wells in the Group 518 \par
+9.5. The Pressure Distribution over the External Boundary . . 520 \par
+9.6. Small Groups of Wells Supplied by an Infinite Line Drive. 521 \par
+9.7. Infinite Sets of Wells in Linear Arrays 523 \par
+9.8. The Pressure Distribution about an Infinite Array of Wells. \par
+The Line Drive 524 \par
+9.9. Two-line Arrays. Shielding Effects 530 \par
+9.10. Three-line Arrays 540 \par
+9.11. Staggered Wells in Line Arrays 545 \par
+9.12. The\textquotesingle Theory of Offsetting. Statement of the Problem. . . 546 \par
+9.13. Single-line Offsetting 548 \par
+9.14. Multiple-line Offsetting 552 \par
+9.15. Numerical Example 556 \par
+9.16. The Problem of Water Flooding 560 \par
+9.17. The Progress of the Water-oil Interface---Electrolytic- \par
+model Experiments 561 \par
+9.18. Model Experiments with Line Floods 565 \par
+9.19. Experiments Corresponding to Artificial Flooding  \par
+Operations 568 \par
+9.20. Effect of Barriers in the Flooding System 572 \par
+9.21. Conduction-sheet Models and Potential Distributions. . . 573 \par
+9.22. Analytical Calculations of the Conductivities of Flooding \par
+Network. General Method 580 \par
+9.23. The Conductivity of the Direct Line-drive Flood 582 \par
+9.24. The Conductivity of the Five-spot Flood 585 \par
+9.25. The Conductivity of the Seven-spot Flood 587 \par
+9.26. The Conductivity of the Staggered Line Drive 592 \par
+9.27. The Calculation of Flooding Efficiencies 593 \par
+9.28. The Efficiency of the Direct Line-drive Flood 594 \par
+9.29. The Five-spot-flood Efficiency 596 \par
+9.30. The Efficiency of the Seven-spot Flood 597 \par
+9.31. The Efficiency of the Staggered Line-drive Flood 598 \par
+9.32. General Observations on Flooding Networks 599 \par
+9.33. Comparison of the Flooding Networks. . 600 \par
+9.34. Summary 606 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 17{]}\par
+xviii CONTENTS \par
+PART III. THE NONSTEAD Y-STATE FLOW OF LIQUIDS \par
+Page \par
+CHAPTER X \par
+The Flow of Compressible Liquids thkotjgh Porous Media , -. . 621 \par
+10.1. Introduction 621 \par
+10.2. Radial Flow Systems. Some Preliminary Analytical \par
+Formulas \textquotesingle. . 630 \par
+10.3. Radial Systems in Which the Density Is Specified over \par
+Both Boundaries 632 \par
+10.4. Production Decline in a Field Produced by a Water Drive \par
+with Variable Field Pressures 635 \par
+10.5. The Limiting Case of Vanishing Internal Radius 639 \par
+10.6. The Rise of the Bottom-hole Pressures in Closed-in Wells . 640 \par
+10.7. Radial Systems in Which the Density Is Specified over One \par
+Boundary and the Flux over the Other 642 \par
+10.8. The Pressure Decline in the "East Texas" Oil Field ... 644 \par
+10.9. A Single Well in a Closed Reservoir 653 \par
+10.10. A Well of Infinitesimal Radius 654 \par
+10.11. Radial Systems in Which the Flux Is Specified over Both \par
+Boundaries 655 \par
+10.12. The Limiting Case of Vanishing Internal Radius 656 \par
+10.13. A Well in a Closed Sand 657 \par
+10.14. Nonradial Flow. Well Interference. Green\textquotesingle s Function. . 661 \par
+10.15. The Use of Sources and Sinks in the Solution of Problems \par
+Involving the Nonsteady-state Flow of Compressible \par
+Liquids through Porous Media 666 \par
+10.16. Summary 669 \par
+PART IV. THE FLOW OF GASES THROUGH POROUS \par
+MEDIA \par
+CHAPTER XI \par
+The Flow of Gases through Porous Media 679 \par
+11.1. Introduction 679 \par
+11.2. The Steady-state Flow of Gases. Linear Systems .... 680 \par
+11.3. Two-dimensional Systems in the Steady State 681 \par
+11.4. Three-dimensional Systems in the Steady State 683 \par
+11.5. The Effect of Gravity on the Flow of Gases through Porous \par
+Media 684 \par
+11.6. The Steady-state Flow of Gases within Systems of  \par
+Nonuniform Permeability 685 \par
+11.7. Two-fluid Systems. Water Coning 686 \par
+11.8. Gas-oil Ratios in Porous Media Carrying Gas and Oil as \par
+Homogeneous Fluids 687 \par
+11.9. Gas-oil Ratios for Communicating Gas and Oil Zones. . . 689 \par
+\smallskip
+\smallskip
+\smallskip
+{[}Страница файла 18{]}\par
+CONTENTS \par
+XIX \par
+Pagk \par
+11.10. Gas-oil Ratios for Non Communicating Gas and Oil Sands. 692 \par
+11.11. The Effect of the Tubing on the Gas-oil Ratio 696 \par
+11.12. Gas Coning in Tubed Wells 701 \par
+11.13. Multiple-well Systems 704 \par
+11.14. The Nonsteady-state Flow of Gases through Porous Media 704 \par
+11.15. A Closed Gas Reservoir Drained by a Well Producing at \par
+Constant Pressure 708 \par
+11.16. A Closed Gas Reservoir Drained by a Well Producing at a \par
+Uniform Rate 712 \par
+11.17. Summary 714 \par
+APPENDICES \par
+I. Conversion Factors 723 \par
+II. Laplace\textquotesingle s Equation in Curvilinear Coordinates 725 \par
+III. Some Two-dimensional Green\textquotesingle s Functions 727 \par
+IV. The Transformation Properties of the Modular Elliptic \par
+Function 0(q) = k*2 729 \par
+V. Proof of the Generalized Poisson Formula. Eq. 6.4(15) . . 732 \par
+VI. Tabulation of the Specific Quantitative Results Developed \par
+in This Work in Formula or Graphical Form 733 \par
+Author Index 751 \par
+Subject Index \par
+755\par
+\endgroup
+
+% ===== Раздел 17 =====
+
+\section{Рукописный конспект --- ориентир вместо оглавления}\label{section-17}
+
+Файл: \texttt{porous-lecture-notes.pdf}. Отдельного оглавления нет. Ниже приблизительные тематические блоки по визуальному просмотру разворотов; границы требуют уточнения при конкретном вопросе. Рукописный текст плохо поддается OCR, поэтому не использовать его распознавание как точную цитату.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Страницы PDF
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Тематический ориентир
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1--5 & Пористость, осреднение, скорость фильтрации, закон Дарси, балансовые уравнения \\
+6--10 & Уравнения энергии, границы применимости закона Дарси, обобщения, соотношения на границах \\
+11--14 & Несжимаемая жидкость, простые течения, приток к скважине, плоские задачи, комплексный потенциал \\
+15--18 & Безнапорные течения, свободная поверхность, гидравлическая теория, фильтрация газа \\
+19--22 & Упругий режим, волна давления, скважины; начало рассмотрения вытеснения \\
+23--24 & Вытеснение и устойчивость границы раздела \\
+25--30 & Двухфазная фильтрация, насыщенность, характеристики, разрывы, Бакли--Леверетт \\
+31--33 & Капиллярность и структура переходной зоны, уравнения двухфазной фильтрации \\
+\end{longtable}
+
+\end{document}

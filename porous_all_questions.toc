@@ -1,0 +1,13 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{Вопрос 1. Пористая среда и скорость фильтрации}{2}{section*.3}%
+\contentsline {section}{Вопрос 2. Закон Дарси и его обобщения}{6}{section*.9}%
+\contentsline {section}{Вопрос 3. Балансы, разрывы и граничные условия}{12}{section*.20}%
+\contentsline {section}{Вопрос 4. Напорная фильтрация и совершенная скважина}{20}{section*.37}%
+\contentsline {section}{Вопрос 5. Плоская фильтрация и методы ТФКП}{24}{section*.46}%
+\contentsline {section}{Вопрос 6. Безнапорная фильтрация}{30}{section*.53}%
+\contentsline {section}{Вопрос 7. Изотермическая фильтрация газа}{33}{section*.62}%
+\contentsline {section}{Вопрос 8. Упругий режим и пьезопроводность}{35}{section*.67}%
+\contentsline {section}{Вопрос 9. Поршневое вытеснение и устойчивость фронта}{38}{section*.74}%
+\contentsline {section}{Вопрос 10. Многофазная фильтрация и капиллярность}{42}{section*.92}%
+\contentsline {section}{Вопрос 11. Двухфазная модель и скачки насыщенности}{47}{section*.111}%
+\contentsline {section}{Вопрос 12. Эволюционность и структура скачка}{52}{section*.130}%

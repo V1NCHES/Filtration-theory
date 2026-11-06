@@ -1,0 +1,26 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath,amssymb,mathrsfs,cancel}
+\usepackage[margin=22mm]{geometry}
+\usepackage{graphicx,float}
+\usepackage[unicode,hidelinks]{hyperref}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\Div}{div}
+\newcommand{\Rey}{\mathrm{Re}}
+\setlength{\emergencystretch}{3em}
+\sloppy
+\interfootnotelinepenalty=10000
+\newcommand{\topic}[1]{\par\medskip\noindent\textbf{#1}\par\nobreak\smallskip}
+\renewcommand{\thefootnote}{\arabic{footnote})}
+\begin{document}
+\section*{Вопрос 11}
+Модель двухфазного течения в пренебрежении капиллярной разностью давлений (модель Маскета — Мереса). Опрокидывание волны повышения насыщенности в задаче об одномерном течении (в задаче Бакли — Леверетта). Условия на скачках насыщенности.
+
+\medskip
+\noindent\textbf{Источник:} Г. И. Баренблатт, В. М. Ентов, В. М. Рыжик. \textit{Теория нестационарной фильтрации жидкости и газа}. Москва: Недра, 1972. Глава VI, § 2, с. 155--164.
+\par\bigskip
+\input{chapter}
+\end{document}

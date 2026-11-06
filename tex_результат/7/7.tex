@@ -1,0 +1,56 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath,amssymb,mathrsfs,cancel}
+\usepackage[margin=22mm]{geometry}
+\usepackage{graphicx,float}
+\usepackage[unicode,hidelinks]{hyperref}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\Div}{div}
+\newcommand{\Rey}{\mathrm{Re}}
+\setlength{\emergencystretch}{3em}
+\interfootnotelinepenalty=10000
+\newcommand{\topic}[1]{\par\medskip\noindent\textbf{#1}\par\nobreak\smallskip}
+\renewcommand{\thefootnote}{\arabic{footnote})}
+\begin{document}
+\section*{Вопрос 7}
+\noindent Изотермическая фильтрация газа в недеформируемой пористой среде. Уравнение для давления (уравнение Лейбензона). Аналогия с пологими безнапорными движениями несжимаемой жидкости в пористой среде.
+
+\medskip
+\noindent\textbf{Источник:} Н. Е. Леонтьев. \textit{Основы теории фильтрации}. 2-е изд. Москва: МАКС Пресс, 2017. Глава III, § 11, печатные страницы 66--69.
+\par\bigskip
+\begin{quote}\sloppy
+При фильтрации газа в промысловых условиях становятся существенными эффекты, связанные с сжимаемостью флюида. В первом приближении можно пренебречь сжимаемостью пористого скелета по сравнению с сжимаемостью газа\footnote{Обычно упругие модули материала скелета (например, модуль Юнга $E$) на много порядков больше давления газа, поэтому относительное изменение удельного объема газа $\delta V/V\sim\delta p/p$ много больше относительных деформаций материала скелета $\varepsilon_{ij}\sim\delta p/E$, вызванных изменениями давления газа.}, считая пористость и проницаемость известными функциями только от пространственных координат:
+\[m=m(x,y,z),\qquad k=k(x,y,z),\]
+а движение газа (в отсутствие дополнительных источников тепловой энергии) считать \textit{изотермическим}:
+\[T(x,y,z,t)=T_0=\mathrm{const}.\]
+В этом случае замкнутая система уравнений состоит из уравнения неразрывности и закона Дарси\footnote{Действием массовых сил при фильтрации газа можно пренебречь.}
+\[m\frac{\partial\rho}{\partial t}+\Div(\rho\boldsymbol{u})=0,\qquad\boldsymbol{u}=-\frac{k}{\mu}\grad p,\]
+к которым добавляются известные уравнения состояния для газа:
+\[\rho=\rho(p,T_0)=\rho(p),\qquad\mu=\mu(p,T_0)=\mu(p).\]
+\par\nobreak\smallskip{\small Н. Е. Леонтьев. \textit{Основы теории фильтрации}. 2-е изд., 2017. Глава III, § 11, с. 66.}\par
+\end{quote}
+
+\begin{quote}\sloppy
+Из этих уравнений можно получить одно уравнение относительно давления. Действительно, подставляя закон Дарси в уравнение неразрывности и для простоты полагая пористость и проницаемость постоянными величинами, получим уравнение
+\[m\frac{d\rho(p)}{dp}\frac{\partial p}{\partial t}=k\Div\left(\frac{\rho(p)}{\mu(p)}\grad p\right),\]
+которое после введения \textit{функции Лейбензона}\setcounter{footnote}{0}\footnote{Функция Лейбензона монотонно возрастает, и, следовательно, может быть обращена: $p=p(\mathscr{P})$.}
+\[\mathscr{P}(p)=k\int_0^p\frac{\rho(p_1)}{\mu(p_1)}\,dp_1\]
+приобретает вид нелинейного уравнения относительно $\mathscr{P}$:
+\[\frac{\partial\mathscr{P}}{\partial t}=\varkappa(\mathscr{P})\cdot\triangle\mathscr{P},\quad\varkappa(\mathscr{P})=\varkappa(\mathscr{P}(p))=\frac{k\rho(p)}{m\mu(p)}\frac{dp(\rho)}{d\rho}.\]
+Обратим внимание, что функции $\mathscr{P}(p)$ и $\varkappa(p)$ зависят только от свойств газа и являются \textit{известными} до решения задачи.
+
+В частном случае газа с уравнением состояния Менделеева--Клапейрона и постоянной вязкостью $\mu=\mathrm{const}$\footnote{Вязкость газа из невзаимодействующих частиц, как это устанавливается в молекулярно-кинетической теории, не зависит от давления и увеличивается с ростом температуры по закону $\mu\sim\sqrt T$. Вязкость реальных газов при $T=\mathrm{const}$ как правило возрастает с повышением давления.} эти формулы дают
+\[\begin{gathered}
+p=\frac{p_0}{\rho_0}\rho,\quad\mathscr{P}(p)=\frac{k\rho_0}{2\mu p_0}p^2,\quad\varkappa(\mathscr{P}(p))=\frac{k}{m\mu}p,\\
+\frac{\partial(p^2)}{\partial t}=\frac{k}{m\mu}p\triangle(p^2),
+\end{gathered}\]
+откуда получается \textit{уравнение Лейбензона}\footnote{Уравнение (11.1) было получено в начале 1920-х гг. академиком Л.С.Лейбензоном и несколько позже американским гидромехаником М.Маскетом (M.Muskat).}
+\begin{equation}\frac{\partial p}{\partial t}=\frac{k}{2m\mu}\triangle(p^2),\tag{11.1}\label{q7:eq-11-1}\end{equation}
+которое совпадает с уравнением Буссинеска (9.3) для формы пологой поверхности депрессии при безнапорной фильтрации несжимаемой жидкости.
+\par\nobreak\smallskip{\small Н. Е. Леонтьев. \textit{Основы теории фильтрации}. 2-е изд., 2017. Глава III, § 11, с. 66--67.}\par
+\end{quote}
+
+\end{document}

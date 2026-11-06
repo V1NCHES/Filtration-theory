@@ -1,0 +1,29 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=22mm]{geometry}
+\usepackage{graphicx,float}
+\usepackage[unicode,hidelinks]{hyperref}
+\setlength{\emergencystretch}{3em}
+\interfootnotelinepenalty=10000
+\newcommand{\topic}[1]{\par\medskip\noindent\textbf{#1}\par\nobreak\smallskip}
+\renewcommand{\thefootnote}{\arabic{footnote})}
+\DeclareMathOperator{\grad}{grad}
+\title{Вопрос 5. Плоская установившаяся фильтрация. Методы ТФКП}
+\author{Н. Е. Леонтьев\\\large Основы теории фильтрации}
+\date{Учебное пособие. 2-е издание. Москва: МАКС Пресс, 2017\\Глава II, § 8. Печатные страницы 43--54}
+\begin{document}
+\maketitle
+\noindent\textit{Полный перенос § 8, до заголовка § 9 на странице 54. Страницы PDF совпадают с печатными. Размещение материала перевёрстано. Отдельным приложением включён фрагмент рукописного конспекта о трубе-источнике.}
+\input{chapter}
+\clearpage
+\section*{Приложение. Труба-источник}
+\noindent\textit{Источник: porous-lecture-notes.pdf, страницы файла 14--15. Автор, год и названия главы и параграфа в выбранном фрагменте не указаны. Видимые номера разворотов: 14 и 15. Это отдельный источник, не текст учебника Леонтьева.}
+\par\medskip
+\input{notes}
+\end{document}
